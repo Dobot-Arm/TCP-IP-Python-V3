@@ -738,7 +738,7 @@ class DobotApiMove(DobotApi):
         Joint motion interface (linear motion mode)
         j1~j6:Point position values on each joint
         """
-        string = "JointMovJ({:f},{:f},{:f},{:f}".format(
+        string = "JointMovJ({:f},{:f},{:f},{:f},{:f},{:f}".format(
             j1, j2, j3, j4, j5, j6)
         for params in dynParams:
             string =string+ ","+ str(params)

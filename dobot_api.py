@@ -445,7 +445,7 @@ class DobotApiDashboard(DobotApi):
         self.send_data(string)
         return self.wait_reply()
 
-    def SetHoldRegs(self, id, addr, count, table, type):
+    def SetHoldRegs(self, id, addr, count, table, type=None):
         """
         Write hold register
         id :Secondary device NUMBER (A maximum of five devices can be supported. The value ranges from 0 to 4
@@ -459,8 +459,12 @@ class DobotApiDashboard(DobotApi):
             "F32" : reads 32-bit single-precision floating-point number (4 bytes, occupying 2 registers)
             "F64" : reads 64-bit double precision floating point number (8 bytes, occupying 4 registers)
         """
-        string = "SetHoldRegs({:d},{:d},{:d},{:d},{:s})".format(
+        if type is not None:
+         string = "SetHoldRegs({:d},{:d},{:d},{:d},{:s})".format(
             id, addr, count, table, type)
+        else:
+         string = "SetHoldRegs({:d},{:d},{:d},{:d})".format(
+            id, addr, count, table)
         self.send_data(string)
         return self.wait_reply()
 
@@ -471,14 +475,227 @@ class DobotApiDashboard(DobotApi):
         string = "GetErrorID()"
         self.send_data(string)
         return self.wait_reply()
+    
+    
+    def DOExecute(self,offset1,offset2):
+        string = "DOExecute({:d},{:d}".format(offset1,offset2)+")"
+        self.send_data(string)
+        return self.wait_reply()
+      
+    def ToolDO(self,offset1,offset2):
+        string = "ToolDO({:d},{:d}".format(offset1,offset2)+")"
+        self.send_data(string)
+        return self.wait_reply()
 
+    def ToolDOExecute(self,offset1,offset2):
+        string = "ToolDOExecute({:d},{:d}".format(offset1,offset2)+")"
+        self.send_data(string)
+        return self.wait_reply()
+
+    def  SetArmOrientation(self,offset1):
+        string = "SetArmOrientation({:d}".format(offset1)+")"
+        self.send_data(string)
+        return self.wait_reply()
+
+    def SetPayload(self, offset1, *dynParams):
+        string = "SetPayload({:f}".format(
+            offset1)
+        for params in dynParams:
+          string = string + str(params)+","
+        string = string + ")"
+        self.send_data(string)
+        return self.wait_reply()
+
+    def PositiveSolution(self,offset1,offset2,offset3,offset4,offset5,offset6,user,tool):   
+        string = "PositiveSolution({:f},{:f},{:f},{:f},{:f},{:f},{:d},{:d}".format(offset1,offset2,offset3,offset4,offset5,offset6,user,tool)+")"
+        self.send_data(string)
+        return self.wait_reply()
+
+    def InverseSolution(self,offset1,offset2,offset3,offset4,offset5,offset6,user,tool,*dynParams):       
+        string = "InverseSolution({:f},{:f},{:f},{:f},{:f},{:f},{:d},{:d}".format(offset1,offset2,offset3,offset4,offset5,offset6,user,tool)
+        for params in dynParams:
+            print(type(params), params)
+            string = string + repr(params)
+        string = string + ")"
+        self.send_data(string)
+        return self.wait_reply()     
+
+    def SetCollisionLevel(self,offset1):
+        string = "SetCollisionLevel({:d}".format(offset1)+")"
+        self.send_data(string)
+        return self.wait_reply()
+
+    def  GetAngle(self):
+        string = "GetAngle()"
+        self.send_data(string)
+        return self.wait_reply()
+
+    def  GetPose(self):   
+        string = "GetPose()"
+        self.send_data(string)
+        return self.wait_reply()
+    
+    def EmergencyStop(self):
+        string = "EmergencyStop()"
+        self.send_data(string)
+        return self.wait_reply()
+
+    def ModbusCreate(self,offset1,offset2,offset3,offset4):
+        string = "ModbusCreate("+repr(offset1)+","
+        string =string+"{:d},{:d},{:d}".format(offset2,offset3,offset4)+")"
+        self.send_data(string)
+        return self.wait_reply()
+    
+    def ModbusClose(self,offset1):
+        string = "ModbusClose({:d}".format(offset1)+")"
+        self.send_data(string)
+        return self.wait_reply()
+
+    def SetSafeSkin(self,offset1):
+        string = "SetSafeSkin({:d}".format(offset1)+")"
+        self.send_data(string)
+        return self.wait_reply()    
+    
+    def SetObstacleAvoid(self,offset1):
+        string = "SetObstacleAvoid({:d}".format(offset1)+")"
+        self.send_data(string)
+        return self.wait_reply()    
+    
+    def GetTraceStartPose(self,offset1):
+        string = "GetTraceStartPose({:s}".format(offset1)+")"
+        self.send_data(string)
+        return self.wait_reply()    
+    
+    def GetPathStartPose(self,offset1):
+        string = "GetPathStartPose({:s}".format(offset1)+")"
+        self.send_data(string)
+        return self.wait_reply()    
+    
+    def HandleTrajPoints(self,offset1):
+        string = "HandleTrajPoints({:s}".format(offset1)+")"
+        self.send_data(string)
+        return self.wait_reply()    
+    
+    def GetSixForceData(self):
+        string = "GetSixForceData()"
+        self.send_data(string)
+        return self.wait_reply()
+       
+    def SetCollideDrag(self,offset1):
+        string = "SetCollideDrag({:d}".format(offset1)+")"
+        self.send_data(string)
+        return self.wait_reply()
+    
+    
+    def SetTerminalKeys(self,offset1):
+        string = "SetTerminalKeys({:d}".format(offset1)+")"
+        self.send_data(string)
+        return self.wait_reply()
+    
+    def SetTerminal485(self,offset1,offset2,offset3,offset4):
+        string = "SetTerminal485({:d},{:d},{:s},{:d}".format(offset1,offset2,offset3,offset4)+")"
+        self.send_data(string)
+        return self.wait_reply() 
+    
+    def GetTerminal485(self):
+        string = "GetTerminal485()"
+        self.send_data(string)
+        return self.wait_reply()  
+    
+    def TCPSpeed(self,offset1):
+        string = "TCPSpeed({:d}".format(offset1)+")"
+        self.send_data(string)
+        return self.wait_reply()     
+    
+    def TCPSpeedEnd(self):
+        string = "TCPSpeedEnd()"
+        self.send_data(string)
+        return self.wait_reply()              
+
+    def GetInBits(self,offset1,offset2,offset3):
+        string = "GetInBits({:d},{:d},{:d}".format(offset1,offset2,offset3)+")"
+        self.send_data(string)
+        return self.wait_reply()        
+
+    def GetInRegs(self,offset1,offset2,offset3,*dynParams):
+        string = "GetInRegs({:d},{:d},{:d}".format(offset1,offset2,offset3)
+        for params in dynParams:
+            print(type(params), params)
+            string = string + params[0]
+        string = string + ")"
+        self.send_data(string)
+        return self.wait_reply()  
+
+    def GetCoils(self,offset1,offset2,offset3):
+        string = "GetCoils({:d},{:d},{:d}".format(offset1,offset2,offset3)+")"
+        self.send_data(string)
+        return self.wait_reply()          
+
+    def SetCoils(self,offset1,offset2,offset3,offset4):
+        string = "SetCoils({:d},{:d},{:d}".format(offset1,offset2,offset3)+","+ repr(offset4)+")"
+        print(str(offset4))
+        self.send_data(string)
+        return self.wait_reply()              
+
+    def DI(self,offset1):
+        string = "DI({:d}".format(offset1)+")"
+        self.send_data(string)
+        return self.wait_reply()        
+
+    def  ToolDI(self,offset1):
+        string = "DI({:d}".format(offset1)+")"
+        self.send_data(string)
+        return self.wait_reply()   
+
+    def DOGroup(self,*dynParams):
+        string = "DOGroup("
+        for params in dynParams:
+            string = string + str(params)+","
+        string =string+ ")" 
+        print(string)   
+        return self.wait_reply()  
+
+    def BrakeControl(self,offset1,offset2): 
+        string = "BrakeControl({:d},{:d}".format(offset1,offset2)+")"
+        self.send_data(string)
+        return self.wait_reply()             
+
+    def StartDrag(self):
+        string = "StartDrag()"
+        self.send_data(string)
+        return self.wait_reply()      
+
+    def StopDrag(self):
+        string = "StopDrag()"
+        self.send_data(string)
+        return self.wait_reply()           
+
+    def LoadSwitch(self,offset1):    
+        string = "LoadSwitch({:d}".format(offset1)+")"
+        self.send_data(string)
+        return self.wait_reply()                                                         
+    
+    def wait(self):
+        string = "wait()"
+        self.send_data(string)
+        return self.wait_reply()
+
+    def pause(self):
+        string = "pause()"
+        self.send_data(string)
+        return self.wait_reply()
+
+    def Continue(self):
+        string = "continue()"
+        self.send_data(string)
+        return self.wait_reply()
 
 class DobotApiMove(DobotApi):
     """
     Define class dobot_api_move to establish a connection to Dobot
     """
 
-    def MovJ(self, x, y, z, rx, ry, rz):
+    def MovJ(self, x, y, z, rx, ry, rz,*dynParams):
         """
         Joint motion interface (point-to-point motion mode)
         x: A number in the Cartesian coordinate system x
@@ -488,12 +705,16 @@ class DobotApiMove(DobotApi):
         ry: Position of Ry axis in Cartesian coordinate system
         rz: Position of Rz axis in Cartesian coordinate system
         """
-        string = "MovJ({:f},{:f},{:f},{:f},{:f},{:f})".format(
+        string = "MovJ({:f},{:f},{:f},{:f},{:f},{:f}".format(
             x, y, z, rx, ry, rz)
+        for params in dynParams:
+             string =string+ ","+ str(params)
+        string =string+ ")" 
+        print(string)  
         self.send_data(string)
         return self.wait_reply()
 
-    def MovL(self, x, y, z, rx, ry, rz):
+    def MovL(self, x, y, z, rx, ry, rz,*dynParams):
         """
         Coordinate system motion interface (linear motion mode)
         x: A number in the Cartesian coordinate system x
@@ -503,42 +724,55 @@ class DobotApiMove(DobotApi):
         ry: Position of Ry axis in Cartesian coordinate system
         rz: Position of Rz axis in Cartesian coordinate system
         """
-        string = "MovL({:f},{:f},{:f},{:f},{:f},{:f})".format(
+        string = "MovL({:f},{:f},{:f},{:f},{:f},{:f}".format(
             x, y, z, rx, ry, rz)
+        for params in dynParams:
+             string =string+ ","+ str(params)
+        string =string+ ")" 
+        print(string) 
         self.send_data(string)
         return self.wait_reply()
 
-    def JointMovJ(self, j1, j2, j3, j4, j5, j6):
+    def JointMovJ(self, j1, j2, j3, j4, j5, j6,*dynParams):
         """
         Joint motion interface (linear motion mode)
         j1~j6:Point position values on each joint
         """
-        string = "JointMovJ({:f},{:f},{:f},{:f},{:f},{:f})".format(
+        string = "JointMovJ({:f},{:f},{:f},{:f}".format(
             j1, j2, j3, j4, j5, j6)
+        for params in dynParams:
+            string =string+ ","+ str(params)
+        string =string+ ")" 
         self.send_data(string)
         return self.wait_reply()
 
     def Jump(self):
         print("待定")
 
-    def RelMovJ(self, offset1, offset2, offset3, offset4, offset5, offset6):
+    def RelMovJ(self, offset1, offset2, offset3, offset4, offset5, offset6,*dynParams):
         """
         Offset motion interface (point-to-point motion mode)
         j1~j6:Point position values on each joint
         """
-        string = "RelMovJ({:f},{:f},{:f},{:f},{:f},{:f})".format(
+        string = "RelMovJ({:f},{:f},{:f},{:f},{:f},{:f}".format(
             offset1, offset2, offset3, offset4, offset5, offset6)
+        for params in dynParams:
+            string =string+ ","+ str(params)
+        string =string+ ")" 
         self.send_data(string)
         return self.wait_reply()
 
-    def RelMovL(self, offsetX, offsetY, offsetZ):
+    def RelMovL(self, offsetX, offsetY, offsetZ,*dynParams):
         """
         Offset motion interface (point-to-point motion mode)
         x: Offset in the Cartesian coordinate system x
         y: offset in the Cartesian coordinate system y
         z: Offset in the Cartesian coordinate system Z
         """
-        string = "RelMovL({:f},{:f},{:f})".format(offsetX, offsetY, offsetZ)
+        string = "RelMovL({:f},{:f},{:f}".format(offsetX, offsetY, offsetZ)
+        for params in dynParams:
+            string =string+ ","+ str(params)
+        string =string+ ")" 
         self.send_data(string)
         return self.wait_reply()
 
@@ -561,12 +795,9 @@ class DobotApiMove(DobotApi):
         # example： MovLIO(0,50,0,0,0,0,(0,50,1,0),(1,1,2,1))
         string = "MovLIO({:f},{:f},{:f},{:f},{:f},{:f}".format(
             x, y, z, a, b, c)
-        print(type(dynParams), dynParams)
         for params in dynParams:
-            print(type(params), params)
-            string = string + ",{{{:d},{:d},{:d},{:d}}}".format(
-                params[0], params[1], params[2], params[3])
-        string = string + ")"
+            string =string+ ","+ str(params)
+        string =string+ ")" 
         self.send_data(string)
         return self.wait_reply()
 
@@ -590,37 +821,40 @@ class DobotApiMove(DobotApi):
         string = "MovJIO({:f},{:f},{:f},{:f},{:f},{:f}".format(
             x, y, z, a, b, c)
         self.log("Send to 192.168.5.1:29999:" + string)
-        print(type(dynParams), dynParams)
         for params in dynParams:
-            print(type(params), params)
-            string = string + ",{{{:d},{:d},{:d},{:d}}}".format(
-                params[0], params[1], params[2], params[3])
-        string = string + ")"
+            string =string+ ","+ str(params)
+        string =string+ ")" 
         self.send_data(string)
         return self.wait_reply()
 
-    def Arc(self, x1, y1, z1, a1, b1, c1, x2, y2, z2, a2, b2, c2):
+    def Arc(self, x1, y1, z1, a1, b1, c1, x2, y2, z2, a2, b2, c2,*dynParams):
         """
         Circular motion instruction
         x1, y1, z1, a1, b1, c1 :Is the point value of intermediate point coordinates
         x2, y2, z2, a2, b2, c2 :Is the value of the end point coordinates
         Note: This instruction should be used together with other movement instructions
         """
-        string = "Arc({:f},{:f},{:f},{:f},{:f},{:f},{:f},{:f},{:f},{:f},{:f},{:f})".format(
+        string = "Arc({:f},{:f},{:f},{:f},{:f},{:f},{:f},{:f},{:f},{:f},{:f},{:f}".format(
             x1, y1, z1, a1, b1, c1, x2, y2, z2, a2, b2, c2)
+        for params in dynParams:
+            string =string+ ","+ str(params)
+        string =string+ ")" 
         self.send_data(string)
         return self.wait_reply()
 
-    def Circle(self, count, x1, y1, z1, a1, b1, c1, x2, y2, z2, a2, b2, c2):
+    def Circle3(self, count, x1, y1, z1, a1, b1, c1, x2, y2, z2, a2, b2, c2,*dynParams):
         """
         Full circle motion command
         count：Run laps
-        x1, y1, z1, a1, b1, c1 :Is the point value of intermediate point coordinates
-        x2, y2, z2, a2, b2, c2 :Is the value of the end point coordinates
+        x1, y1, z1, r1 :Is the point value of intermediate point coordinates
+        x2, y2, z2, r2 :Is the value of the end point coordinates
         Note: This instruction should be used together with other movement instructions
         """
-        string = "Circle({:d},{:f},{:f},{:f},{:f},{:f},{:f},{:f},{:f},{:f},{:f},{:f},{:f})".format(
-            count, x1, y1, z1, a1, b1, c1, x2, y2, z2, a2, b2, c2)
+        string = "Circle3({:d},{:f},{:f},{:f},{:f},{:f},{:f},{:f},{:f},{:f},{:f},{:f},{:f}".format(
+             count, x1, y1, z1, a1, b1, c1, x2, y2, z2, a2, b2, c2)
+        for params in dynParams:
+            string = string + ","+ str(params)
+        string = string + ")" 
         self.send_data(string)
         return self.wait_reply()
 
@@ -657,12 +891,10 @@ class DobotApiMove(DobotApi):
                     user_index: user index is 0 ~ 9 (default value is 0)
                     tool_index: tool index is 0 ~ 9 (default value is 0)
         """
-        string = f"MoveJog({axis_id}"
+        string = "MoveJog({:f}".format(axis_id)
         for params in dynParams:
-            print(type(params), params)
-            string = string + ", CoordType={:d}, User={:d}, Tool={:d}".format(
-                params[0], params[1], params[2])
-        string = string + ")"
+            string = string + ","+ str(params)
+        string = string + ")" 
         self.send_data(string)
         return self.wait_reply()
 
@@ -773,6 +1005,7 @@ class DobotApiMove(DobotApi):
         offset_rx: Rx axis position
         offset_ry: Ry axis position
         offset_rz: Rz axis position
+
         user: Select the calibrated user coordinate system, value range: 0 ~ 9
         *dynParams: parameter Settings（speed_j, acc_j, tool）
                     speed_j: Set joint speed scale, value range: 1 ~ 100
@@ -782,9 +1015,7 @@ class DobotApiMove(DobotApi):
         string = "RelMovJUser({:f},{:f},{:f},{:f},{:f},{:f}, {:d}".format(
             offset_x, offset_y, offset_z, offset_rx, offset_ry, offset_rz, user)
         for params in dynParams:
-            print(type(params), params)
-            string = string + ", SpeedJ={:d}, AccJ={:d}, Tool={:d}".format(
-                params[0], params[1], params[2])
+            string = string + ","+ str(params)
         string = string + ")"
         self.send_data(string)
         return self.wait_reply()
@@ -807,14 +1038,12 @@ class DobotApiMove(DobotApi):
         string = "RelMovLUser({:f},{:f},{:f},{:f},{:f},{:f}, {:d}".format(
             offset_x, offset_y, offset_z, offset_rx, offset_ry, offset_rz, user)
         for params in dynParams:
-            print(type(params), params)
-            string = string + ", SpeedJ={:d}, AccJ={:d}, Tool={:d}".format(
-                params[0], params[1], params[2])
+            string = string + ","+ str(params)
         string = string + ")"
         self.send_data(string)
         return self.wait_reply()
 
-    def RelJointMovJ(self, offset1, offset2, offset3, offset4, offset5, offset6, *dynParams):
+    def RelJointMovJ(self, offset1, offset2, offset3, offset4,offset5, offset6, *dynParams):
         """
         The relative motion command is carried out along the joint coordinate system of each axis, and the end motion mode is joint motion
         Offset motion interface (point-to-point motion mode)
@@ -826,9 +1055,23 @@ class DobotApiMove(DobotApi):
         string = "RelJointMovJ({:f},{:f},{:f},{:f},{:f},{:f}".format(
             offset1, offset2, offset3, offset4, offset5, offset6)
         for params in dynParams:
-            print(type(params), params)
-            string = string + ", SpeedJ={:d}, AccJ={:d}".format(
-                params[0], params[1])
+           string = string + ","+ str(params)
         string = string + ")"
         self.send_data(string)
         return self.wait_reply()
+    
+    # def MovJExt(self, offset1, *dynParams):
+    #     string = "MovJExt({:f}".format(
+    #         offset1)
+    #     for params in dynParams:
+    #        string = string + ","+ str(params)
+    #     string = string + ")"
+    #     self.send_data(string)
+    #     return self.wait_reply()
+
+    # def SyncAll(self):
+    #     string = "SyncAll()"
+    #     self.send_data(string)
+    #     return self.wait_reply()
+
+    

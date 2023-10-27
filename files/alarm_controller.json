@@ -294,6 +294,90 @@
     }
   },
   {
+    "id": 41,
+    "level": 5,
+    "en": {
+      "description": "First axis collision back ",
+      "cause": "",
+      "solution": "Contact technical support engineers"
+    },
+    "zh_CN": {
+      "description": "第一轴碰撞回退",
+      "cause": "",
+      "solution": "请联系技术支持工程师"
+    }
+  },
+  {
+    "id": 42,
+    "level": 5,
+    "en": {
+      "description": "Second axis collision back ",
+      "cause": "",
+      "solution": "Contact technical support engineers"
+    },
+    "zh_CN": {
+      "description": "第二轴碰撞回退",
+      "cause": "",
+      "solution": "请联系技术支持工程师"
+    }
+  },
+  {
+    "id": 43,
+    "level": 5,
+    "en": {
+      "description": "Third axis collision back ",
+      "cause": "",
+      "solution": "Contact technical support engineers"
+    },
+    "zh_CN": {
+      "description": "第三轴碰撞回退",
+      "cause": "",
+      "solution": "请联系技术支持工程师"
+    }
+  },
+  {
+    "id": 44,
+    "level": 5,
+    "en": {
+      "description": "Fourth axis collision back ",
+      "cause": "",
+      "solution": "Contact technical support engineers"
+    },
+    "zh_CN": {
+      "description": "第四轴碰撞回退",
+      "cause": "",
+      "solution": "请联系技术支持工程师"
+    }
+  },
+  {
+    "id": 45,
+    "level": 5,
+    "en": {
+      "description": "Fifth axis collision back ",
+      "cause": "",
+      "solution": "Contact technical support engineers"
+    },
+    "zh_CN": {
+      "description": "第五轴碰撞回退",
+      "cause": "",
+      "solution": "请联系技术支持工程师"
+    }
+  },
+  {
+    "id": 46,
+    "level": 5,
+    "en": {
+      "description": "Sixth axis collision back ",
+      "cause": "",
+      "solution": "Contact technical support engineers"
+    },
+    "zh_CN": {
+      "description": "第六轴碰撞回退",
+      "cause": "",
+      "solution": "请联系技术支持工程师"
+    }
+  },
+  {
     "id": 48,
     "level": 5,
     "en": {
@@ -993,7 +1077,7 @@
       "solution": "检查硬件是否正常并重新启动，或联系厂商"
     }
   },
-   {
+  {
     "id": 119,
     "level": 0,
     "en": {
@@ -1007,7 +1091,7 @@
       "solution": "避开障碍物，清除警报，继续运行"
     }
   },
-   {
+  {
     "id": 120,
     "level": 5,
     "en": {
@@ -1035,7 +1119,7 @@
       "solution": "检查硬件是否正常并重新启动，或联系技术支持工程师"
     }
   },
-    {
+  {
     "id": 122,
     "level": 0,
     "en": {
@@ -1063,7 +1147,7 @@
       "solution": "检查硬件是否正常并重新启动，或联系技术支持工程师"
     }
   },
- {
+  {
     "id": 124,
     "level": 0,
     "en": {
@@ -1077,7 +1161,7 @@
       "solution": "检查硬件是否正常并重新启动，或联系技术支持工程师"
     }
   },
- {
+  {
     "id": 125,
     "level": 0,
     "en": {
@@ -1105,7 +1189,7 @@
       "solution": "重新上电，或联系技术支持工程师"
     }
   },
-    {
+  {
     "id": 127,
     "level": 0,
     "en": {
@@ -1162,6 +1246,48 @@
     }
   },
   {
+    "id": 132,
+    "level": 0,
+    "en": {
+      "description": "Abnormal charging detection of 24V super capacitor",
+      "cause": "",
+      "solution": "Check whether the hardware is working properly, or contact technical support engineer"
+    },
+    "zh_CN": {
+      "description": "24V超级电容充电检测异常",
+      "cause": "",
+      "solution": "检查硬件是否正常，或联系厂商"
+    }
+  },
+  {
+    "id": 133,
+    "level": 0,
+    "en": {
+      "description": "Abnormal charging detection of 48V super capacitor",
+      "cause": "",
+      "solution": "Check whether the hardware is working properly, or contact technical support engineer"
+    },
+    "zh_CN": {
+      "description": "48V超级电容充电检测异常",
+      "cause": "",
+      "solution": "检查硬件是否正常，或联系厂商"
+    }
+  },
+  {
+    "id": 134,
+    "level": 0,
+    "en": {
+      "description": "Position deviation of  joint is too large when enabled",
+      "cause": "",
+      "solution": "Check that the load parameters and mounting Angle are correct"
+    },
+    "zh_CN": {
+      "description": "上使能关节位置偏差过大",
+      "cause": "",
+      "solution": "检查负载参数和安装角度是否正确"
+    }
+  },
+  {
     "id": 144,
     "level": 5,
     "en": {
@@ -1175,7 +1301,7 @@
       "solution": "输入正确参数"
     }
   },
- {
+  {
     "id": 146,
     "level": 5,
     "en": {
@@ -1188,21 +1314,21 @@
       "cause": "",
       "solution": "确认目标点位是否限位"
     }
- },
- {
+  },
+  {
     "id": 160,
     "level": 5,
     "en": {
-      "description": "Pause error reporting during track reproduction",
+      "description": "The current motion instruction does not support pause",
       "cause": "",
-      "solution": "Pause function is not supported during track reproduction"
+      "solution": "The current motion instruction does not support pause"
     },
     "zh_CN": {
-      "description": "轨迹复现过程中暂停报错",
+      "description": "当前运动指令不支持暂停",
       "cause": "",
-      "solution": "轨迹复现过程中不支持暂停功能"
+      "solution": "当前运动指令不支持暂停"
     }
- },
+  },
   {
     "id": 161,
     "level": 5,
@@ -1218,17 +1344,199 @@
     }
   },
   {
+    "id": 162,
+    "level": 0,
+    "en": {
+      "description": "MCU undervoltage",
+      "cause": "",
+      "solution": "Check if the voltage is normal, or contact technical support engineer"
+    },
+    "zh_CN": {
+      "description": "mcu欠压",
+      "cause": "",
+      "solution": "检查电压是否正常，或联系技术支持工程师"
+    }
+  },
+  {
+    "id": 163,
+    "level": 0,
+    "en": {
+      "description": "MCU overvoltage",
+      "cause": "",
+      "solution": "Check if the hardware is functioning properly, or contact a technical support engineer"
+    },
+    "zh_CN": {
+      "description": "mcu过压",
+      "cause": "",
+      "solution": "检查硬件是否正常，或联系技术支持工程师"
+    }
+  },
+  {
+    "id": 164,
+    "level": 0,
+    "en": {
+      "description": "Abnormal energy feedback circuit",
+      "cause": "",
+      "solution": "Check if the hardware is functioning properly, or contact a technical support engineer"
+    },
+    "zh_CN": {
+      "description": "馈能电路异常",
+      "cause": "",
+      "solution": "检查硬件是否正常，或联系技术支持工程师"
+    }
+  },
+  {
+    "id": 165,
+    "level": 0,
+    "en": {
+      "description": "Soft or hard emergency stop triggered",
+      "cause": "",
+      "solution": "Release the emergency stop, power on again, or contact technical support engineer"
+    },
+    "zh_CN": {
+      "description": "软急停或者硬急停被触发",
+      "cause": "",
+      "solution": "松开急停，重新上电，或联系技术支持工程师"
+    }
+  },
+  {
+    "id": 166,
+    "level": 0,
+    "en": {
+      "description": "Abnormal hard emergency stop line",
+      "cause": "",
+      "solution": "Check if the hardware is functioning properly, or contact a technical support engineer"
+    },
+    "zh_CN": {
+      "description": "硬急停线异常",
+      "cause": "",
+      "solution": "检查硬件是否正常，或联系技术支持工程师"
+    }
+  },
+  {
+    "id": 167,
+    "level": 0,
+    "en": {
+      "description": "Abnormal short circuit of body power supply",
+      "cause": "",
+      "solution": "Check if the hardware is functioning properly, or contact a technical support engineer"
+    },
+    "zh_CN": {
+      "description": "本体供电短路异常",
+      "cause": "",
+      "solution": "检查硬件是否正常，或联系技术支持工程师"
+    }
+  },
+  {
+    "id": 168,
+    "level": 5,
+    "en": {
+      "description": "Error in setting the minimum value of feedback voltage",
+      "cause": "",
+      "solution": "Reset or contact technical support engineer"
+    },
+    "zh_CN": {
+      "description": "馈能电压最小值设置错误",
+      "cause": "",
+      "solution": "重新设置，或联系技术支持工程师"
+    }
+  },
+  {
+    "id": 169,
+    "level": 5,
+    "en": {
+      "description": "Error in setting the maximum value of the feedback voltage",
+      "cause": "",
+      "solution": "Reset or contact technical support engineer"
+    },
+    "zh_CN": {
+      "description": "馈能电压最大值设置错误",
+      "cause": "",
+      "solution": "重新设置，或联系技术支持工程师"
+    }
+  },
+  {
+    "id": 170,
+    "level": 5,
+    "en": {
+      "description": "MCU temperature too high",
+      "cause": "",
+      "solution": "Please connect an external power supply resistor. If an external power supply resistor is already connected, please contact the after-sales FAE"
+    },
+    "zh_CN": {
+      "description": "mcu温度过高",
+      "cause": "",
+      "solution": "请外接馈能电阻,如已外接馈能电阻,请联系售后FAE"
+    }
+  },
+  {
+    "id": 171,
+    "level": 5,
+    "en": {
+      "description": "MCU universal IO failed to set PNP",
+      "cause": "",
+      "solution": "Please reset or contact after-sales FAE"
+    },
+    "zh_CN": {
+      "description": "mcu通用io设置pnp失败",
+      "cause": "",
+      "solution": "请重新设置,或者联系售后FAE"
+    }
+  },
+  {
+    "id": 172,
+    "level": 5,
+    "en": {
+      "description": "MCU universal io setting npn failed",
+      "cause": "",
+      "solution": "Please reset or contact after-sales FAE"
+    },
+    "zh_CN": {
+      "description": "mcu通用io设置npn失败",
+      "cause": "",
+      "solution": "请重新设置,或者联系售后FAE"
+    }
+  },
+  {
+    "id": 173,
+    "level": 5,
+    "en": {
+      "description": "Abnormal shutdown",
+      "cause": "",
+      "solution": "Please check if the RMT port is short circuited, or contact the after-sales FAE"
+    },
+    "zh_CN": {
+      "description": "关机异常",
+      "cause": "",
+      "solution": "请检查rmt端口是否短接,或者联系售后FAE"
+    }
+  },
+  {
+    "id": 174,
+    "level": 5,
+    "en": {
+      "description": "Abnormal energy feedback time detection",
+      "cause": "",
+      "solution": "Check if the input power supply and load are standardized, or contact technical support engineer"
+    },
+    "zh_CN": {
+      "description": "馈能时间检测异常",
+      "cause": "",
+      "solution": "检查输入电源和负载是否规范，或联系技术支持工程师"
+    }
+  },
+  {
     "id": 176,
     "level": 5,
     "en": {
       "description": "Force Control Command timeout",
       "cause": "",
-      "solution": ""
+      "solution": "Please contact fae"
     },
     "zh_CN": {
       "description": "力控指令超时",
       "cause": "",
-      "solution": ""
+      "solution": "请联系fae"
     }
   },
   {
@@ -1271,6 +1579,48 @@
       "description": "力控传感器未启用",
       "cause": "",
       "solution": "启用力控传感器"
+    }
+  },
+  {
+    "id": 180,
+    "level": 5,
+    "en": {
+      "description": "Terminal DO1 output overcurrent alarm",
+      "cause": "",
+      "solution": "Check whether the hardware is normal and restart, or contact technical support engineers"
+    },
+    "zh_CN": {
+      "description": "末端DO1输出过流报警",
+      "cause": "",
+      "solution": "检查硬件是否正常并重新启动，或联系技术支持工程师"
+    }
+  },
+  {
+    "id": 181,
+    "level": 5,
+    "en": {
+      "description": "Terminal DO2 output overcurrent alarm",
+      "cause": "",
+      "solution": "Check whether the hardware is normal and restart, or contact technical support engineers"
+    },
+    "zh_CN": {
+      "description": "末端DO2输出过流报警",
+      "cause": "",
+      "solution": "检查硬件是否正常并重新启动，或联系技术支持工程师"
+    }
+  },
+  {
+    "id": 182,
+    "level": 5,
+    "en": {
+      "description": "Terminal 24V output overcurrent alarm",
+      "cause": "",
+      "solution": "Check whether the hardware is normal and restart, or contact technical support engineers"
+    },
+    "zh_CN": {
+      "description": "末端24V输出过流报警",
+      "cause": "",
+      "solution": "检查硬件是否正常并重新启动，或联系技术支持工程师"
     }
   },
   {
@@ -1343,7 +1693,539 @@
       "solution": "录制新的轨迹或设置合适的参数。"
     }
   },
- {
+  {
+    "id": 210,
+    "level": 5,
+    "en": {
+      "description": "",
+      "cause": "",
+      "solution": ""
+    },
+    "zh_CN": {
+      "description": "直线摆焊参数错误",
+      "cause": "",
+      "solution": "请输入正确的参数"
+    }
+  },
+  {
+    "id": 211,
+    "level": 5,
+    "en": {
+      "description": "",
+      "cause": "",
+      "solution": ""
+    },
+    "zh_CN": {
+      "description": "圆弧摆焊参数错误",
+      "cause": "",
+      "solution": "请输入正确的参数"
+    }
+  },
+  {
+    "id": 212,
+    "level": 5,
+    "en": {
+      "description": "",
+      "cause": "",
+      "solution": ""
+    },
+    "zh_CN": {
+      "description": "ServoP或ServoJ规划失败",
+      "cause": "",
+      "solution": "请输入正确的参数"
+    }
+  },
+  {
+    "id": 224,
+    "level": 5,
+    "en": {
+      "description": "End TCP / elbow crossing safety wall alarm",
+      "cause": "",
+      "solution": "The inching robot returns to the safety wall."
+    },
+    "zh_CN": {
+      "description": "末端TCP/肘部越过安全墙报警",
+      "cause": "",
+      "solution": "点动机器人回到安全墙内。"
+    }
+  },
+  {
+    "id": 225,
+    "level": 5,
+    "en": {
+      "description": "The tracking difference of Joint 1 is too large",
+      "cause": "",
+      "solution": "System error, restart controller or contact technical support engineer"
+    },
+    "zh_CN": {
+      "description": "第一轴跟随误差过大",
+      "cause": "",
+      "solution": "系统错误，重新启动或联系技术支持工程师"
+    }
+  },
+  {
+    "id": 226,
+    "level": 5,
+    "en": {
+      "description": "The tracking difference of Joint 2 is too large",
+      "cause": "",
+      "solution": "System error, restart controller or contact technical support engineer"
+    },
+    "zh_CN": {
+      "description": "第二轴跟随误差过大",
+      "cause": "",
+      "solution": "系统错误，重新启动或联系技术支持工程师"
+    }
+  },
+  {
+    "id": 227,
+    "level": 5,
+    "en": {
+      "description": "The tracking difference of Joint 3 is too large",
+      "cause": "",
+      "solution": "System error, restart controller or contact technical support engineer"
+    },
+    "zh_CN": {
+      "description": "第三轴跟随误差过大",
+      "cause": "",
+      "solution": "系统错误，重新启动或联系技术支持工程师"
+    }
+  },
+  {
+    "id": 228,
+    "level": 5,
+    "en": {
+      "description": "The tracking difference of Joint 4 is too large",
+      "cause": "",
+      "solution": "System error, restart controller or contact technical support engineer"
+    },
+    "zh_CN": {
+      "description": "第四轴跟随误差过大",
+      "cause": "",
+      "solution": "系统错误，重新启动或联系技术支持工程师"
+    }
+  },
+  {
+    "id": 229,
+    "level": 5,
+    "en": {
+      "description": "The tracking difference of Joint 5 is too large",
+      "cause": "",
+      "solution": "System error, restart controller or contact technical support engineer"
+    },
+    "zh_CN": {
+      "description": "第五轴跟随误差过大",
+      "cause": "",
+      "solution": "系统错误，重新启动或联系技术支持工程师"
+    }
+  },
+  {
+    "id": 230,
+    "level": 5,
+    "en": {
+      "description": "The tracking difference of Joint 6 is too large",
+      "cause": "",
+      "solution": "System error, restart controller or contact technical support engineer"
+    },
+    "zh_CN": {
+      "description": "第六轴跟随误差过大",
+      "cause": "",
+      "solution": "系统错误，重新启动或联系技术支持工程师"
+    }
+  },
+  {
+    "id": 231,
+    "level": 5,
+    "en": {
+      "description": "",
+      "cause": "",
+      "solution": ""
+    },
+    "zh_CN": {
+      "description": "圆弧半径超限",
+      "cause": "",
+      "solution": "请重新选择点位"
+    }
+  },
+  {
+    "id": 232,
+    "level": 5,
+    "en": {
+      "description": "",
+      "cause": "",
+      "solution": ""
+    },
+    "zh_CN": {
+      "description": "摆焊速度超限",
+      "cause": "",
+      "solution": "请输入正确的速度参数"
+    }
+  },
+  {
+    "id": 233,
+    "level": 5,
+    "en": {
+      "description": "",
+      "cause": "",
+      "solution": ""
+    },
+    "zh_CN": {
+      "description": "摆弧频率超限",
+      "cause": "",
+      "solution": "请输入正确的摆弧频率"
+    }
+  },
+  {
+    "id": 240,
+    "level": 5,
+    "en": {
+      "description": "",
+      "cause": "",
+      "solution": ""
+    },
+    "zh_CN": {
+      "description": "机器人末端超过压力阈值",
+      "cause": "",
+      "solution": "请联系技术支持工程师"
+    }
+  },
+  {
+    "id": 241,
+    "level": 5,
+    "en": {
+      "description": "",
+      "cause": "",
+      "solution": ""
+    },
+    "zh_CN": {
+      "description": "机器人末端下探距离超限",
+      "cause": "",
+      "solution": "请联系技术支持工程师"
+    }
+  },
+  {
+    "id": 242,
+    "level": 5,
+    "en": {
+      "description": "The following error of the first axis is too large",
+      "cause": "",
+      "solution": "System error, restart controller or contact technical support engineer"
+    },
+    "zh_CN": {
+      "description": "第一轴跟随误差过大",
+      "cause": "",
+      "solution": "系统错误，重新启动或联系技术支持工程师"
+    }
+  },
+  {
+    "id": 243,
+    "level": 5,
+    "en": {
+      "description": "The following error of the second axis is too large",
+      "cause": "",
+      "solution": "System error, restart controller or contact technical support engineer"
+    },
+    "zh_CN": {
+      "description": "第二轴跟随误差过大",
+      "cause": "",
+      "solution": "系统错误，重新启动或联系技术支持工程师"
+    }
+  },
+  {
+    "id": 244,
+    "level": 5,
+    "en": {
+      "description": "The following error of the third axis is too large",
+      "cause": "",
+      "solution": "System error, restart controller or contact technical support engineer"
+    },
+    "zh_CN": {
+      "description": "第三轴跟随误差过大",
+      "cause": "",
+      "solution": "系统错误，重新启动或联系技术支持工程师"
+    }
+  },
+  {
+    "id": 245,
+    "level": 5,
+    "en": {
+      "description": "The following error of the fourth axis is too large",
+      "cause": "",
+      "solution": "System error, restart controller or contact technical support engineer"
+    },
+    "zh_CN": {
+      "description": "第四轴跟随误差过大",
+      "cause": "",
+      "solution": "系统错误，重新启动或联系技术支持工程师"
+    }
+  },
+  {
+    "id": 246,
+    "level": 5,
+    "en": {
+      "description": "The following error of the fifth axis is too large",
+      "cause": "",
+      "solution": "System error, restart controller or contact technical support engineer"
+    },
+    "zh_CN": {
+      "description": "第五轴跟随误差过大",
+      "cause": "",
+      "solution": "系统错误，重新启动或联系技术支持工程师"
+    }
+  },
+  {
+    "id": 247,
+    "level": 5,
+    "en": {
+      "description": "The following error of the sixth axis is too large",
+      "cause": "",
+      "solution": "System error, restart controller or contact technical support engineer"
+    },
+    "zh_CN": {
+      "description": "第六轴跟随误差过大",
+      "cause": "",
+      "solution": "系统错误，重新启动或联系技术支持工程师"
+    }
+  },
+  {
+    "id": 248,
+    "level": 5,
+    "en": {
+      "description": "The first axis steady state error is too large",
+      "cause": "",
+      "solution": "System error, restart controller or contact technical support engineer"
+    },
+    "zh_CN": {
+      "description": "第一轴稳态误差过大",
+      "cause": "",
+      "solution": "系统错误，重新启动或联系技术支持工程师"
+    }
+  },
+  {
+    "id": 249,
+    "level": 5,
+    "en": {
+      "description": "The second axis steady state error is too large",
+      "cause": "",
+      "solution": "System error, restart controller or contact technical support engineer"
+    },
+    "zh_CN": {
+      "description": "第二轴稳态误差过大",
+      "cause": "",
+      "solution": "系统错误，重新启动或联系技术支持工程师"
+    }
+  },
+  {
+    "id": 250,
+    "level": 5,
+    "en": {
+      "description": "The third axis steady state error is too large",
+      "cause": "",
+      "solution": "System error, restart controller or contact technical support engineer"
+    },
+    "zh_CN": {
+      "description": "第三轴稳态误差过大",
+      "cause": "",
+      "solution": "系统错误，重新启动或联系技术支持工程师"
+    }
+  },
+  {
+    "id": 251,
+    "level": 5,
+    "en": {
+      "description": "The fourth axis steady-state error is too large",
+      "cause": "",
+      "solution": "System error, restart controller or contact technical support engineer"
+    },
+    "zh_CN": {
+      "description": "第四轴稳态误差过大",
+      "cause": "",
+      "solution": "系统错误，重新启动或联系技术支持工程师"
+    }
+  },
+  {
+    "id": 252,
+    "level": 5,
+    "en": {
+      "description": "The fifth axis steady-state error is too large",
+      "cause": "",
+      "solution": "System error, restart controller or contact technical support engineer"
+    },
+    "zh_CN": {
+      "description": "第五轴稳态误差过大",
+      "cause": "",
+      "solution": "系统错误，重新启动或联系技术支持工程师"
+    }
+  },
+  {
+    "id": 253,
+    "level": 5,
+    "en": {
+      "description": "The sixth axis steady-state error is too large",
+      "cause": "",
+      "solution": "System error, restart controller or contact technical support engineer"
+    },
+    "zh_CN": {
+      "description": "第六轴稳态误差过大",
+      "cause": "",
+      "solution": "系统错误，重新启动或联系技术支持工程师"
+    }
+  },
+  {
+    "id": 254,
+    "level": 5,
+    "en": {
+      "description": "The current command does not support resuming operation after collision",
+      "cause": "",
+      "solution": "Please adjust the instructions to avoid obstacles"
+    },
+    "zh_CN": {
+      "description": "当前指令不支持碰撞后恢复运行",
+      "cause": "",
+      "solution": "请调整指令，避开障碍物"
+    }
+  },
+  {
+    "id": 1000,
+    "level": 0,
+    "en": {
+      "description": "disable exit drag failed",
+      "cause": "",
+      "solution": "Check whether the hardware is working properly, and restart the the controller， or contact technical support engineer"
+    },
+    "zh_CN": {
+      "description": "下使能退出拖拽失败",
+      "cause": "",
+      "solution": "检查硬件是否正常并重新启动，或联系技术支持工程师"
+    }
+  },
+  {
+    "id": 1001,
+    "level": 0,
+    "en": {
+      "description": "The first parameter of tcpread is incorrect",
+      "cause": "",
+      "solution": "Please check input"
+    },
+    "zh_CN": {
+      "description": "tcpread第1个参数错误",
+      "cause": "",
+      "solution": "请检查输入"
+    }
+  },
+  {
+    "id": 1002,
+    "level": 0,
+    "en": {
+      "description": "The second parameter of tcpread is incorrect",
+      "cause": "",
+      "solution": "Please check input"
+    },
+    "zh_CN": {
+      "description": "tcpread第2个参数错误",
+      "cause": "",
+      "solution": "请检查输入"
+    }
+  },
+  {
+    "id": 1003,
+    "level": 0,
+    "en": {
+      "description": "The third parameter of tcpread is incorrect",
+      "cause": "",
+      "solution": "Please check input"
+    },
+    "zh_CN": {
+      "description": "tcpread第3个参数错误",
+      "cause": "",
+      "solution": "请检查输入"
+    }
+  },
+  {
+    "id": 1004,
+    "level": 0,
+    "en": {
+      "description": "Failed to exit the drag",
+      "cause": "",
+      "solution": "contact technical support engineer"
+    },
+    "zh_CN": {
+      "description": "退出拖拽失败",
+      "cause": "",
+      "solution": "联系技术支持工程师"
+    }
+  },
+  {
+    "id": 1005,
+    "level": 0,
+    "en": {
+      "description": "Failed to exit the drag",
+      "cause": "",
+      "solution": "contact technical support engineer"
+    },
+    "zh_CN": {
+      "description": "远程modbus配置异常",
+      "cause": "",
+      "solution": "modbus配置异常,使能coils:100,下使能coils:101"
+    }
+  },
+  {
+    "id": 1006,
+    "level": 0,
+    "en": {
+      "description": "attempt to compare number with nil.",
+      "cause": "",
+      "solution": "Please check if there are null variables in the Lua code."
+    },
+    "zh_CN": {
+      "description": "尝试将数字与零进行比较.",
+      "cause": "",
+      "solution": "请检查lua代码是否有空值变量."
+    }
+  },
+  {
+    "id": 1007,
+    "level": 0,
+    "en": {
+      "description": "Power-on failure, internal controller error.",
+      "cause": "",
+      "solution": "Please reboot the device or contact FAE."
+    },
+    "zh_CN": {
+      "description": "上电失败，控制器内部异常.",
+      "cause": "",
+      "solution": "请重启设备，或联系FAE."
+    }
+  },
+  {
+    "id": 1008,
+    "level": 0,
+    "en": {
+      "description": "Power-on failure, emergency stop triggered during power-up.",
+      "cause": "",
+      "solution": "Please check if the software and hardware emergency stop buttons have been pressed, and after inspection, power on again."
+    },
+    "zh_CN": {
+      "description": "上电失败，上电过程中触发急停.",
+      "cause": "",
+      "solution": "请检查软硬件急停是否被拍下，检查完毕后重新上电."
+    }
+  },
+  {
+    "id": 1009,
+    "level": 0,
+    "en": {
+      "description": "Power-on failure, communication exception occurred during the power-on process.",
+      "cause": "",
+      "solution": "Please check if the hardware is functioning properly, or contact FAE for assistance."
+    },
+    "zh_CN": {
+      "description": "上电失败，上电过程中发生通讯异常.",
+      "cause": "",
+      "solution": "请检查硬件是否正常，或者联系FAE."
+    }
+  },
+  {
     "id": 1772,
     "level": 0,
     "en": {
@@ -1371,7 +2253,7 @@
       "solution": "检查硬件是否正常并重新启动，或联系技术支持工程师"
     }
   },
- {
+  {
     "id": 1775,
     "level": 0,
     "en": {
@@ -1385,7 +2267,7 @@
       "solution": "检查硬件是否正常并重新启动，或联系技术支持工程师"
     }
   },
- {
+  {
     "id": 1776,
     "level": 0,
     "en": {
@@ -1411,6 +2293,20 @@
       "description": "打开机械参数文件失败",
       "cause": "",
       "solution": "检查文件位置是否正确并重新启动"
+    }
+  },
+  {
+    "id": 4118,
+    "level": 0,
+    "en": {
+      "description": "Security I/O is disconnected",
+      "cause": "",
+      "solution": "Check whether the hardware is working properly, and restart the controller， or contact technical support engineer"
+    },
+    "zh_CN": {
+      "description": "mcu掉线",
+      "cause": "",
+      "solution": "检查硬件是否正常并重新启动，或联系厂商"
     }
   },
   {
@@ -1537,6 +2433,20 @@
       "description": "解析CPUS失败",
       "cause": "",
       "solution": "重新运行调试进程"
+    }
+  },
+  {
+    "id": 8201,
+    "level": 0,
+    "en": {
+      "description": "Internal communication error",
+      "cause": "",
+      "solution": "Rerun the script"
+    },
+    "zh_CN": {
+      "description": "内部通讯错误",
+      "cause": "",
+      "solution": "重新运行脚本"
     }
   },
   {
@@ -1680,6 +2590,104 @@
     }
   },
   {
+    "id": 12297,
+    "level": 0,
+    "en": {
+      "description": "The CPU temperature is higher than the alarm threshold of 65 degrees",
+      "cause": "",
+      "solution": "System error, please contact technical support engineer"
+    },
+    "zh_CN": {
+      "description": "CPU温度高于告警阈值",
+      "cause": "",
+      "solution": "系统错误，请联系技术支持工程师"
+    }
+  },
+  {
+    "id": 12298,
+    "level": 0,
+    "en": {
+      "description": "The CPU temperature is higher than the alarm threshold of 65 degrees",
+      "cause": "",
+      "solution": "System error, please contact technical support engineer"
+    },
+    "zh_CN": {
+      "description": "伺服一MCU温度超过报警阈值",
+      "cause": "",
+      "solution": "系统错误，请联系技术支持工程师"
+    }
+  },
+  {
+    "id": 12299,
+    "level": 0,
+    "en": {
+      "description": "The CPU temperature is higher than the alarm threshold of 65 degrees",
+      "cause": "",
+      "solution": "System error, please contact technical support engineer"
+    },
+    "zh_CN": {
+      "description": "伺服二MCU温度超过报警阈值",
+      "cause": "",
+      "solution": "系统错误，请联系技术支持工程师"
+    }
+  },
+  {
+    "id": 12300,
+    "level": 0,
+    "en": {
+      "description": "The CPU temperature is higher than the alarm threshold of 65 degrees",
+      "cause": "",
+      "solution": "System error, please contact technical support engineer"
+    },
+    "zh_CN": {
+      "description": "伺服三MCU温度超过报警阈值",
+      "cause": "",
+      "solution": "系统错误，请联系技术支持工程师"
+    }
+  },
+  {
+    "id": 12301,
+    "level": 0,
+    "en": {
+      "description": "The CPU temperature is higher than the alarm threshold of 65 degrees",
+      "cause": "",
+      "solution": "System error, please contact technical support engineer"
+    },
+    "zh_CN": {
+      "description": "伺服四MCU温度超过报警阈值",
+      "cause": "",
+      "solution": "系统错误，请联系技术支持工程师"
+    }
+  },
+  {
+    "id": 12302,
+    "level": 0,
+    "en": {
+      "description": "The CPU temperature is higher than the alarm threshold of 65 degrees",
+      "cause": "",
+      "solution": "System error, please contact technical support engineer"
+    },
+    "zh_CN": {
+      "description": "伺服五MCU温度超过报警阈值",
+      "cause": "",
+      "solution": "系统错误，请联系技术支持工程师"
+    }
+  },
+  {
+    "id": 12303,
+    "level": 0,
+    "en": {
+      "description": "The CPU temperature is higher than the alarm threshold of 65 degrees",
+      "cause": "",
+      "solution": "System error, please contact technical support engineer"
+    },
+    "zh_CN": {
+      "description": "伺服六MCU温度超过报警阈值",
+      "cause": "",
+      "solution": "系统错误，请联系技术支持工程师"
+    }
+  },
+  {
     "id": 16384,
     "level": 5,
     "en": {
@@ -1693,7 +2701,7 @@
       "solution": "清理障碍物，继续运行"
     }
   },
- {
+  {
     "id": 16386,
     "level": 5,
     "en": {
@@ -1707,7 +2715,7 @@
       "solution": "清除告警，并重新示教点位"
     }
   },
-   {
+  {
     "id": 20480,
     "level": 0,
     "en": {
@@ -1725,12 +2733,12 @@
     "id": 20481,
     "level": 0,
     "en": {
-      "description": "Before power supply, the voltage is higher than 51V",
+      "description": "Before power supply, the voltage is higher than 49.5V",
       "cause": "",
       "solution": "The voltage is too high，please contact technical support engineer"
     },
     "zh_CN": {
-      "description": "供电前，电压高于51V",
+      "description": "供电前，电压高于49.5V",
       "cause": "",
       "solution": "本体供电电压过高,请联系技术支持工程师"
     }
@@ -1739,17 +2747,17 @@
     "id": 20482,
     "level": 0,
     "en": {
-      "description": "Before power supply, the voltage is lower than 45V",
+      "description": "Before power supply, the voltage is lower than 42V",
       "cause": "",
       "solution": "The voltage is too low，please contact technical support engineer"
     },
     "zh_CN": {
-      "description": "供电前，电压低于24V",
+      "description": "供电前，电压低于42V",
       "cause": "",
       "solution": "本体供电电压过低,请联系技术支持工程师"
     }
   },
- {
+  {
     "id": 20483,
     "level": 0,
     "en": {
@@ -1763,30 +2771,30 @@
       "solution": "检查硬件是否正常并重新启动，或联系技术支持工程师"
     }
   },
- {
+  {
     "id": 20484,
     "level": 0,
     "en": {
-      "description": "After power supply, the voltage is higher than 55V",
+      "description": "After power supply, the voltage is higher than 56V",
       "cause": "",
       "solution": "The voltage is too high，please contact technical support engineer"
     },
     "zh_CN": {
-      "description": "供电后，电压高于55V",
+      "description": "供电后，电压高于56V",
       "cause": "",
       "solution": "本体供电电压过高,请联系技术支持工程师"
     }
   },
- {
+  {
     "id": 20485,
     "level": 0,
     "en": {
-      "description": "After power supply, the voltage is lower than 41.4V",
+      "description": "After power supply, the voltage is lower than 24V",
       "cause": "",
       "solution": "The voltage is too low，please contact technical support engineer"
     },
     "zh_CN": {
-      "description": "供电后，电压低于41.4V",
+      "description": "供电后，电压低于24V",
       "cause": "",
       "solution": "本体供电电压过低,请联系技术支持工程师"
     }
@@ -1805,7 +2813,7 @@
       "solution": "系统错误，请联系技术支持工程师"
     }
   },
- {
+  {
     "id": 20487,
     "level": 0,
     "en": {
@@ -1819,7 +2827,21 @@
       "solution": "系统错误，请联系技术支持工程师"
     }
   },
- {
+  {
+    "id": 20488,
+    "level": 0,
+    "en": {
+      "description": "Output voltage alarms before the robot slow-start powering",
+      "cause": "",
+      "solution": "System error, please contact technical support engineer"
+    },
+    "zh_CN": {
+      "description": "本体上电缓启动前输出电压异常报警",
+      "cause": "",
+      "solution": "系统错误，请联系技术支持工程师"
+    }
+  },
+  {
     "id": 20489,
     "level": 0,
     "en": {
@@ -1833,7 +2855,7 @@
       "solution": "馈电电流过大，请联系技术支持工程师"
     }
   },
- {
+  {
     "id": 20490,
     "level": 0,
     "en": {
@@ -1847,7 +2869,7 @@
       "solution": "检查硬件是否正常并重新启动，或联系技术支持工程师"
     }
   },
-{
+  {
     "id": 20491,
     "level": 0,
     "en": {
@@ -1861,7 +2883,21 @@
       "solution": "检查硬件是否正常并重新启动，或联系技术支持工程师"
     }
   },
-{
+  {
+    "id": 20492,
+    "level": 0,
+    "en": {
+      "description": "the Feedback board alarms when the robot is slow-starting",
+      "cause": "",
+      "solution": "Check whether the hardware is working properly, and restart the controller， or contact technical support engineer"
+    },
+    "zh_CN": {
+      "description": "本体上电缓启动时发生馈能报警",
+      "cause": "",
+      "solution": "检查硬件是否正常并重新启动，或联系技术支持工程师"
+    }
+  },
+  {
     "id": 20493,
     "level": 5,
     "en": {
@@ -1875,21 +2911,21 @@
       "solution": "检查硬件是否正常并重新启动，或联系技术支持工程师"
     }
   },
-{
+  {
     "id": 20494,
     "level": 5,
     "en": {
-      "description": "The fan circuit of the feedback board is broken",
+      "description": "the robot slow-start failed",
       "cause": "",
       "solution": "Check whether the hardware is working properly, and restart the controller， or contact technical support engineer"
     },
     "zh_CN": {
-      "description": "馈能板电扇电流断路",
+      "description": "本体上电缓启动失败报警",
       "cause": "",
       "solution": "检查硬件是否正常并重新启动，或联系技术支持工程师"
     }
   },
-{
+  {
     "id": 24576,
     "level": 0,
     "en": {
@@ -1903,7 +2939,7 @@
       "solution": "检查硬件是否正常并重新启动，或联系技术支持工程师"
     }
   },
-{
+  {
     "id": 24578,
     "level": 0,
     "en": {
@@ -1917,7 +2953,7 @@
       "solution": "检查硬件是否正常并重新启动，或联系技术支持工程师"
     }
   },
-{
+  {
     "id": 24579,
     "level": 0,
     "en": {
@@ -1931,7 +2967,7 @@
       "solution": "检查硬件是否正常并重新启动，或联系技术支持工程师"
     }
   },
-{
+  {
     "id": 24581,
     "level": 0,
     "en": {
@@ -1945,7 +2981,7 @@
       "solution": "检查硬件是否正常并重新启动，或联系技术支持工程师"
     }
   },
-{
+  {
     "id": 24582,
     "level": 0,
     "en": {
@@ -1959,7 +2995,7 @@
       "solution": "检查硬件是否正常并重新启动，或联系技术支持工程师"
     }
   },
-{
+  {
     "id": 24583,
     "level": 0,
     "en": {
@@ -1987,7 +3023,35 @@
       "solution": "检查硬件是否正常并重新启动，或联系技术支持工程师"
     }
   },
-{
+  {
+    "id": 24588,
+    "level": 0,
+    "en": {
+      "description": "Abnormal charging detection of 24V super capacitor(modbus)",
+      "cause": "",
+      "solution": "Check whether the hardware is working properly, or contact technical support engineer"
+    },
+    "zh_CN": {
+      "description": "24V超级电容充电检测异常（modbus）",
+      "cause": "",
+      "solution": "检查硬件是否正常，或联系厂商"
+    }
+  },
+  {
+    "id": 24589,
+    "level": 0,
+    "en": {
+      "description": "Abnormal charging detection of 48V super capacitor(modbus)",
+      "cause": "",
+      "solution": "Check whether the hardware is working properly, or contact technical support engineer"
+    },
+    "zh_CN": {
+      "description": "48V超级电容充电检测异常（modbus）",
+      "cause": "",
+      "solution": "检查硬件是否正常，或联系厂商"
+    }
+  },
+  {
     "id": 32768,
     "level": 5,
     "en": {
@@ -2001,7 +3065,7 @@
       "solution": "输入正确参数"
     }
   },
-{
+  {
     "id": 32769,
     "level": 5,
     "en": {
@@ -2015,7 +3079,7 @@
       "solution": "输入正确参数"
     }
   },
-{
+  {
     "id": 32770,
     "level": 5,
     "en": {
@@ -2029,7 +3093,7 @@
       "solution": "输入正确参数"
     }
   },
-{
+  {
     "id": 32771,
     "level": 5,
     "en": {
@@ -2084,7 +3148,7 @@
       "cause": "",
       "solution": "只能输入数字"
     }
-  }, 
+  },
   {
     "id": 32775,
     "level": 5,
@@ -2099,7 +3163,6 @@
       "solution": "再次尝试，如果一直存在错误，请联系技术支持"
     }
   },
-
   {
     "id": 32776,
     "level": 5,
@@ -2114,8 +3177,7 @@
       "solution": "点位过多，最好不要一次输入超过100个点"
     }
   },
-
- {
+  {
     "id": 32777,
     "level": 5,
     "en": {
@@ -2142,7 +3204,7 @@
       "cause": "",
       "solution": "只能输入数字"
     }
-  }, 
+  },
   {
     "id": 32779,
     "level": 5,
@@ -2170,7 +3232,7 @@
       "cause": "",
       "solution": "请输入数字(0/1)或bool(true/false)或内置的 ON/OFF 真 : 队列指令(默认) 假: 立即指令"
     }
-  }, 
+  },
   {
     "id": 32781,
     "level": 5,
@@ -2277,7 +3339,7 @@
       "cause": "",
       "solution": "Enter the correct parameters"
     },
-    "zh_CN": { 
+    "zh_CN": {
       "description": "CP指令无输入参数",
       "cause": "",
       "solution": "输入正确参数"
@@ -2829,7 +3891,6 @@
       "solution": "请输入参数"
     }
   },
-  
   {
     "id": 36111,
     "level": 5,
@@ -2997,7 +4058,7 @@
       "cause": "",
       "solution": "请输入参数"
     }
-  },  
+  },
   {
     "id": 36352,
     "level": 5,
@@ -3111,6 +4172,48 @@
     }
   },
   {
+    "id": 36612,
+    "level": 5,
+    "en": {
+      "description": "GetRunningData command has no input parameters",
+      "cause": "",
+      "solution": "Enter the correct parameters"
+    },
+    "zh_CN": {
+      "description": "GetRunningData指令无输入参数",
+      "cause": "",
+      "solution": "请输入参数"
+    }
+  },
+  {
+    "id": 36613,
+    "level": 5,
+    "en": {
+      "description": "Wait input parameter type is an integer",
+      "cause": "",
+      "solution": "Enter the correct parameters"
+    },
+    "zh_CN": {
+      "description": "Wait指令输入参数类型为整型",
+      "cause": "",
+      "solution": "请输入参数"
+    }
+  },
+  {
+    "id": 36614,
+    "level": 5,
+    "en": {
+      "description": "Sleep input parameter type is an integer",
+      "cause": "",
+      "solution": "Enter the correct parameters"
+    },
+    "zh_CN": {
+      "description": "Sleep指令输入参数类型为整型",
+      "cause": "",
+      "solution": "请输入参数"
+    }
+  },
+  {
     "id": 36864,
     "level": 5,
     "en": {
@@ -3166,7 +4269,7 @@
       "solution": "输入正确参数"
     }
   },
- {
+  {
     "id": 40960,
     "level": 5,
     "en": {
@@ -3179,8 +4282,8 @@
       "cause": "",
       "solution": "请输入参数"
     }
- },
- {
+  },
+  {
     "id": 40961,
     "level": 5,
     "en": {
@@ -3193,8 +4296,8 @@
       "cause": "",
       "solution": "请输入参数"
     }
- },
-{
+  },
+  {
     "id": 40962,
     "level": 5,
     "en": {
@@ -3207,8 +4310,8 @@
       "cause": "",
       "solution": "输入正确参数"
     }
-},
-{
+  },
+  {
     "id": 40963,
     "level": 5,
     "en": {
@@ -3221,8 +4324,8 @@
       "cause": "",
       "solution": "输入正确参数"
     }
-},
-{
+  },
+  {
     "id": 41216,
     "level": 5,
     "en": {
@@ -3235,8 +4338,8 @@
       "cause": "",
       "solution": "请输入参数"
     }
-},
-{
+  },
+  {
     "id": 41217,
     "level": 5,
     "en": {
@@ -3249,8 +4352,8 @@
       "cause": "",
       "solution": "请输入参数"
     }
-},
-{
+  },
+  {
     "id": 41218,
     "level": 5,
     "en": {
@@ -3263,8 +4366,8 @@
       "cause": "",
       "solution": "请输入参数"
     }
-},
-{
+  },
+  {
     "id": 41220,
     "level": 5,
     "en": {
@@ -3277,8 +4380,8 @@
       "cause": "",
       "solution": "请输入参数"
     }
-},
-{
+  },
+  {
     "id": 41221,
     "level": 5,
     "en": {
@@ -3291,8 +4394,8 @@
       "cause": "",
       "solution": "请输入参数"
     }
-},
-{
+  },
+  {
     "id": 41222,
     "level": 5,
     "en": {
@@ -3305,8 +4408,8 @@
       "cause": "",
       "solution": "请输入参数"
     }
-},
-{
+  },
+  {
     "id": 41472,
     "level": 5,
     "en": {
@@ -3319,8 +4422,8 @@
       "cause": "",
       "solution": "请输入参数"
     }
-},
-{
+  },
+  {
     "id": 41473,
     "level": 5,
     "en": {
@@ -3333,8 +4436,8 @@
       "cause": "",
       "solution": "请输入参数"
     }
-},
-{
+  },
+  {
     "id": 41474,
     "level": 5,
     "en": {
@@ -3347,8 +4450,8 @@
       "cause": "",
       "solution": "请输入参数"
     }
-},
-{
+  },
+  {
     "id": 41475,
     "level": 5,
     "en": {
@@ -3361,8 +4464,8 @@
       "cause": "",
       "solution": "请输入参数"
     }
-},
-{
+  },
+  {
     "id": 41476,
     "level": 5,
     "en": {
@@ -3375,8 +4478,8 @@
       "cause": "",
       "solution": "请输入参数"
     }
-},
-{
+  },
+  {
     "id": 41477,
     "level": 5,
     "en": {
@@ -3389,9 +4492,8 @@
       "cause": "",
       "solution": "请输入参数"
     }
-},
-
-{
+  },
+  {
     "id": 41728,
     "level": 5,
     "en": {
@@ -3404,8 +4506,8 @@
       "cause": "",
       "solution": "请输入参数"
     }
-},
-{
+  },
+  {
     "id": 41732,
     "level": 5,
     "en": {
@@ -3418,7 +4520,7 @@
       "cause": "",
       "solution": "请输入参数"
     }
-},
+  },
   {
     "id": 41984,
     "level": 5,
@@ -3433,7 +4535,7 @@
       "solution": "输入正确参数"
     }
   },
-{
+  {
     "id": 41985,
     "level": 5,
     "en": {
@@ -3447,7 +4549,7 @@
       "solution": "输入正确参数"
     }
   },
-{
+  {
     "id": 41986,
     "level": 5,
     "en": {
@@ -3461,7 +4563,7 @@
       "solution": "输入正确参数"
     }
   },
-{
+  {
     "id": 41987,
     "level": 5,
     "en": {
@@ -3475,7 +4577,7 @@
       "solution": "输入正确参数"
     }
   },
-{
+  {
     "id": 41988,
     "level": 5,
     "en": {
@@ -3530,21 +4632,21 @@
       "cause": "",
       "solution": "输入正确参数"
     }
-  },  
-	{
-	  "id": 42243,
-	  "level": 5,
-	  "en": {
-		"description": "Six force sensor has no data over 1 second",
-		"cause": "",
-		"solution": "check the connect of the sensor"
-	  },
-	  "zh_CN": {
-		"description": "六维力数据异常，超过1s没有获得数据",
-		"cause": "",
-		"solution": "检查硬件连接"
-	  }
-	},
+  },
+  {
+    "id": 42243,
+    "level": 5,
+    "en": {
+      "description": "Six force sensor has no data over 1 second",
+      "cause": "",
+      "solution": "check the connect of the sensor"
+    },
+    "zh_CN": {
+      "description": "六维力数据异常，超过1s没有获得数据",
+      "cause": "",
+      "solution": "检查硬件连接"
+    }
+  },
   {
     "id": 42496,
     "level": 5,
@@ -3768,8 +4870,8 @@
       "cause": "",
       "solution": "输入正确的参数"
     }
-  },  
-   {
+  },
+  {
     "id": 42512,
     "level": 5,
     "en": {
@@ -3783,7 +4885,7 @@
       "solution": "输入正确的参数"
     }
   },
-   {
+  {
     "id": 42513,
     "level": 5,
     "en": {
@@ -3796,8 +4898,8 @@
       "cause": "",
       "solution": "输入正确的参数"
     }
-  },  
-   {
+  },
+  {
     "id": 42514,
     "level": 5,
     "en": {
@@ -3810,8 +4912,8 @@
       "cause": "",
       "solution": "输入正确的参数"
     }
-  },  
-   {
+  },
+  {
     "id": 42515,
     "level": 5,
     "en": {
@@ -3824,8 +4926,8 @@
       "cause": "",
       "solution": "输入正确的参数"
     }
-  },  
-   {
+  },
+  {
     "id": 42516,
     "level": 5,
     "en": {
@@ -3838,8 +4940,8 @@
       "cause": "",
       "solution": "输入正确的参数"
     }
-  },  
-   {
+  },
+  {
     "id": 42517,
     "level": 5,
     "en": {
@@ -3852,8 +4954,8 @@
       "cause": "",
       "solution": "输入正确的参数"
     }
-  },  
-   {
+  },
+  {
     "id": 42518,
     "level": 5,
     "en": {
@@ -3866,8 +4968,8 @@
       "cause": "",
       "solution": "输入正确的参数"
     }
-  },  
-   {
+  },
+  {
     "id": 42519,
     "level": 5,
     "en": {
@@ -3880,8 +4982,8 @@
       "cause": "",
       "solution": "输入正确的参数"
     }
-  },  
-   {
+  },
+  {
     "id": 42520,
     "level": 5,
     "en": {
@@ -3894,8 +4996,8 @@
       "cause": "",
       "solution": "输入正确的参数"
     }
-  },  
-   {
+  },
+  {
     "id": 42521,
     "level": 5,
     "en": {
@@ -3908,7 +5010,7 @@
       "cause": "",
       "solution": "输入正确的参数"
     }
-  },  
+  },
   {
     "id": 42522,
     "level": 5,
@@ -3922,7 +5024,7 @@
       "cause": "",
       "solution": "输入正确的参数"
     }
-  },  
+  },
   {
     "id": 42523,
     "level": 5,
@@ -3936,7 +5038,7 @@
       "cause": "",
       "solution": "输入正确的参数"
     }
-  },  
+  },
   {
     "id": 42524,
     "level": 5,
@@ -3945,13 +5047,13 @@
       "cause": "",
       "solution": "Enter the correct parameters"
     },
-    "zh_CN": { 
+    "zh_CN": {
       "description": "FCRef可选参数中 TimeOut 错误",
       "cause": "",
       "solution": "输入正确的参数"
     }
-  },  
-   {
+  },
+  {
     "id": 42525,
     "level": 5,
     "en": {
@@ -3964,8 +5066,8 @@
       "cause": "",
       "solution": "输入正确的参数"
     }
-  },  
-   {
+  },
+  {
     "id": 42526,
     "level": 5,
     "en": {
@@ -3978,8 +5080,8 @@
       "cause": "",
       "solution": "输入正确的参数"
     }
-  },  
-   {
+  },
+  {
     "id": 42527,
     "level": 5,
     "en": {
@@ -3992,9 +5094,8 @@
       "cause": "",
       "solution": "输入正确的参数"
     }
-  },  
-  
-   {
+  },
+  {
     "id": 42544,
     "level": 5,
     "en": {
@@ -4007,8 +5108,8 @@
       "cause": "",
       "solution": "输入正确的参数"
     }
-  },  
-   {
+  },
+  {
     "id": 42545,
     "level": 5,
     "en": {
@@ -4021,8 +5122,8 @@
       "cause": "",
       "solution": "输入正确的参数"
     }
-  },  
-   {
+  },
+  {
     "id": 42546,
     "level": 5,
     "en": {
@@ -4035,8 +5136,8 @@
       "cause": "",
       "solution": "输入正确的参数"
     }
-  },  
-   {
+  },
+  {
     "id": 42547,
     "level": 5,
     "en": {
@@ -4049,8 +5150,8 @@
       "cause": "",
       "solution": "输入正确的参数"
     }
-  },  
-   {
+  },
+  {
     "id": 42548,
     "level": 5,
     "en": {
@@ -4063,8 +5164,8 @@
       "cause": "",
       "solution": "输入正确的参数"
     }
-  },  
-   {
+  },
+  {
     "id": 42549,
     "level": 5,
     "en": {
@@ -4077,9 +5178,8 @@
       "cause": "",
       "solution": "输入正确的参数"
     }
-  },      
-  
-   {
+  },
+  {
     "id": 42550,
     "level": 5,
     "en": {
@@ -4092,7 +5192,8 @@
       "cause": "",
       "solution": "输入正确的参数"
     }
-  }, {
+  },
+  {
     "id": 42551,
     "level": 5,
     "en": {
@@ -4105,7 +5206,7 @@
       "cause": "",
       "solution": "输入正确的参数"
     }
-  }, 
+  },
   {
     "id": 42552,
     "level": 5,
@@ -4119,8 +5220,7 @@
       "cause": "",
       "solution": "输入正确的参数"
     }
-  }, 
-  
+  },
   {
     "id": 42553,
     "level": 5,
@@ -4135,7 +5235,7 @@
       "solution": "输入正确的参数"
     }
   },
-   {
+  {
     "id": 42554,
     "level": 5,
     "en": {
@@ -4149,7 +5249,7 @@
       "solution": "输入正确的参数"
     }
   },
-   {
+  {
     "id": 42555,
     "level": 5,
     "en": {
@@ -4218,8 +5318,91 @@
       "cause": "",
       "solution": "输入正确的参数"
     }
-  }, 
-
+  },
+  {
+    "id": 42688,
+    "level": 5,
+    "en": {
+      "description": "The number of FCSetGain parameters is incorrect",
+      "cause": "",
+      "solution": "Please enter a floating point number"
+    },
+    "zh_CN": {
+      "description": "FCSetGain参数个数错误",
+      "cause": "",
+      "solution": "请输入一个浮点数"
+    }
+  },
+  {
+    "id": 42689,
+    "level": 5,
+    "en": {
+      "description": "The parameter type of the FCSetGain is incorrect",
+      "cause": "",
+      "solution": "Please enter a floating point number"
+    },
+    "zh_CN": {
+      "description": "FCSetGain参数类型错误",
+      "cause": "",
+      "solution": "请输入一个浮点数"
+    }
+  },
+  {
+    "id": 42690,
+    "level": 5,
+    "en": {
+      "description": "The FCSetGain parameter value range is incorrect",
+      "cause": "",
+      "solution": "Enter a floating point number ranging from 0 to 2"
+    },
+    "zh_CN": {
+      "description": "FCSetGain参数范围错误",
+      "cause": "",
+      "solution": "请输入 0~2范围的浮点数"
+    }
+  },
+  {
+    "id": 42688,
+    "level": 5,
+    "en": {
+      "description": "The number of FCSetGain parameters is incorrect",
+      "cause": "",
+      "solution": "Please enter a floating point number"
+    },
+    "zh_CN": {
+      "description": "FCSetGain参数个数错误",
+      "cause": "",
+      "solution": "请输入一个浮点数"
+    }
+  },
+  {
+    "id": 42689,
+    "level": 5,
+    "en": {
+      "description": "The parameter type of the FCSetGain is incorrect",
+      "cause": "",
+      "solution": "Please enter a floating point number"
+    },
+    "zh_CN": {
+      "description": "FCSetGain参数类型错误",
+      "cause": "",
+      "solution": "请输入一个浮点数"
+    }
+  },
+  {
+    "id": 42690,
+    "level": 5,
+    "en": {
+      "description": "The FCSetGain parameter value range is incorrect",
+      "cause": "",
+      "solution": "Enter a floating point number ranging from 0 to 2"
+    },
+    "zh_CN": {
+      "description": "FCSetGain参数范围错误",
+      "cause": "",
+      "solution": "请输入 0~2范围的浮点数"
+    }
+  },
   {
     "id": 42752,
     "level": 5,
@@ -4233,7 +5416,7 @@
       "cause": "",
       "solution": "输入正确的参数"
     }
-  },  
+  },
   {
     "id": 42753,
     "level": 5,
@@ -4247,7 +5430,7 @@
       "cause": "",
       "solution": "输入正确的参数"
     }
-  },  
+  },
   {
     "id": 42754,
     "level": 5,
@@ -4261,8 +5444,7 @@
       "cause": "",
       "solution": "输入正确的参数"
     }
-  }, 
-
+  },
   {
     "id": 45056,
     "level": 5,
@@ -4276,7 +5458,7 @@
       "cause": "",
       "solution": "输入正确的参数"
     }
-  }, 
+  },
   {
     "id": 45057,
     "level": 5,
@@ -4290,7 +5472,7 @@
       "cause": "",
       "solution": "输入正确的参数"
     }
-  }, 
+  },
   {
     "id": 45058,
     "level": 5,
@@ -4304,7 +5486,7 @@
       "cause": "",
       "solution": "输入正确的参数"
     }
-  }, 
+  },
   {
     "id": 45059,
     "level": 5,
@@ -4318,7 +5500,7 @@
       "cause": "",
       "solution": "输入正确的参数"
     }
-  }, 
+  },
   {
     "id": 45060,
     "level": 5,
@@ -4332,7 +5514,7 @@
       "cause": "",
       "solution": "输入正确的参数"
     }
-  }, 
+  },
   {
     "id": 45061,
     "level": 5,
@@ -4346,7 +5528,7 @@
       "cause": "",
       "solution": "输入正确的参数"
     }
-  }, 
+  },
   {
     "id": 45062,
     "level": 5,
@@ -4360,7 +5542,7 @@
       "cause": "",
       "solution": "输入正确参数"
     }
-  }, 
+  },
   {
     "id": 45063,
     "level": 5,
@@ -4374,7 +5556,7 @@
       "cause": "",
       "solution": "输入正确的参数"
     }
-  }, 
+  },
   {
     "id": 45064,
     "level": 5,
@@ -4388,7 +5570,7 @@
       "cause": "",
       "solution": "输入正确的参数"
     }
-  }, 
+  },
   {
     "id": 45065,
     "level": 5,
@@ -4402,7 +5584,7 @@
       "cause": "",
       "solution": "输入正确的参数"
     }
-  }, 
+  },
   {
     "id": 45066,
     "level": 5,
@@ -4416,7 +5598,7 @@
       "cause": "",
       "solution": "输入正确的参数"
     }
-  }, 
+  },
   {
     "id": 45067,
     "level": 5,
@@ -4430,7 +5612,7 @@
       "cause": "",
       "solution": "输入正确的参数"
     }
-  }, 
+  },
   {
     "id": 45068,
     "level": 5,
@@ -4444,7 +5626,7 @@
       "cause": "",
       "solution": "输入正确的参数"
     }
-  }, 
+  },
   {
     "id": 45069,
     "level": 5,
@@ -4458,7 +5640,7 @@
       "cause": "",
       "solution": "输入正确的参数"
     }
-  }, 
+  },
   {
     "id": 45070,
     "level": 5,
@@ -4472,7 +5654,7 @@
       "cause": "",
       "solution": "输入正确的参数"
     }
-  }, 
+  },
   {
     "id": 45071,
     "level": 5,
@@ -4486,7 +5668,7 @@
       "cause": "",
       "solution": "输入正确的参数"
     }
-  },      
+  },
   {
     "id": 45072,
     "level": 5,
@@ -4585,7 +5767,6 @@
       "solution": "输入正确的参数"
     }
   },
-  
   {
     "id": 45079,
     "level": 5,
@@ -4600,7 +5781,7 @@
       "solution": "输入正确的参数"
     }
   },
-    {
+  {
     "id": 45080,
     "level": 5,
     "en": {
@@ -4782,7 +5963,76 @@
       "solution": "输入正确的参数"
     }
   },
-  
+  {
+    "id": 45093,
+    "level": 5,
+    "en": {
+      "description": "index of setTool overflow",
+      "cause": "",
+      "solution": "Enter the correct parameters"
+    },
+    "zh_CN": {
+      "description": "setTool 设置参数索引溢出",
+      "cause": "",
+      "solution": "输入正确的参数"
+    }
+  },
+  {
+    "id": 45094,
+    "level": 5,
+    "en": {
+      "description": "index of setUser overflow",
+      "cause": "",
+      "solution": "Enter the correct parameters"
+    },
+    "zh_CN": {
+      "description": "setUser 设置参数索引溢出",
+      "cause": "",
+      "solution": "输入正确的参数"
+    }
+  },
+  {
+    "id": 45095,
+    "level": 5,
+    "en": {
+      "description": "tool list in setTool params is incorrect",
+      "cause": "",
+      "solution": "Enter the correct parameters"
+    },
+    "zh_CN": {
+      "description": "setTool 设置tool参数错误",
+      "cause": "",
+      "solution": "输入正确的参数"
+    }
+  },
+  {
+    "id": 45096,
+    "level": 5,
+    "en": {
+      "description": "user list in setUser params is incorrect",
+      "cause": "",
+      "solution": "Enter the correct parameters"
+    },
+    "zh_CN": {
+      "description": "setUser 设置user参数错误",
+      "cause": "",
+      "solution": "输入正确的参数"
+    }
+  },
+  {
+    "id": 45135,
+    "level": 5,
+    "en": {
+      "description": "MoveR instruction type error",
+      "cause": "",
+      "solution": "Enter the correct parameters"
+    },
+    "zh_CN": {
+      "description": "MoveR指令类型错误",
+      "cause": "",
+      "solution": "输入正确的参数"
+    }
+  },
   {
     "id": 45136,
     "level": 5,
@@ -4881,7 +6131,6 @@
       "solution": "输入正确的参数"
     }
   },
-  
   {
     "id": 45312,
     "level": 5,
@@ -4910,7 +6159,6 @@
       "solution": "输入正确的参数"
     }
   },
-  
   {
     "id": 45568,
     "level": 5,
@@ -4939,7 +6187,6 @@
       "solution": "输入正确的参数"
     }
   },
-   
   {
     "id": 45824,
     "level": 5,
@@ -5109,6 +6356,20 @@
     }
   },
   {
+    "id": 46098,
+    "level": 0,
+    "en": {
+      "description": "it is not promitted to set install angle during enable mode",
+      "cause": "",
+      "solution": "disable robot, repeat setting install angle"
+    },
+    "zh_CN": {
+      "description": "使能状态不允许设置安装角度",
+      "cause": "",
+      "solution": "下使能，再设置安装角度"
+    }
+  },
+  {
     "id": 46080,
     "level": 5,
     "en": {
@@ -5120,6 +6381,34 @@
       "description": "ExcitMode() 参数错误",
       "cause": "",
       "solution": "输入正确的参数"
+    }
+  },
+  {
+    "id": 46112,
+    "level": 5,
+    "en": {
+      "description": "BlockHighlight(\"id\") params number error",
+      "cause": "",
+      "solution": "Enter the correct parameters,only 1 params "
+    },
+    "zh_CN": {
+      "description": "BlockHighlight(\"id\") 参数数量错误 ",
+      "cause": "",
+      "solution": "输入正确的参数只有一个参数"
+    }
+  },
+  {
+    "id": 46113,
+    "level": 5,
+    "en": {
+      "description": "BlockHighlight(\"id\") params type error.",
+      "cause": "",
+      "solution": "Enter the correct parameters,need a string "
+    },
+    "zh_CN": {
+      "description": "BlockHighlight(\"id\") 参数类型错误",
+      "cause": "",
+      "solution": "输入正确的参数,需要一个字符串"
     }
   },
   {
@@ -5148,6 +6437,62 @@
       "description": "StartPath指令输入参数不存在",
       "cause": "",
       "solution": "输入正确的参数"
+    }
+  },
+  {
+    "id": 49153,
+    "level": 5,
+    "en": {
+      "description": "Hardware emergency stop is pressed",
+      "cause": "",
+      "solution": "Please release the emergency stop"
+    },
+    "zh_CN": {
+      "description": "硬件急停被按下",
+      "cause": "",
+      "solution": "请松开急停"
+    }
+  },
+  {
+    "id": 49154,
+    "level": 5,
+    "en": {
+      "description": "The software emergency stop is pressed",
+      "cause": "",
+      "solution": "Please release the emergency stop"
+    },
+    "zh_CN": {
+      "description": "软件急停被按下",
+      "cause": "",
+      "solution": "请松开急停"
+    }
+  },
+  {
+    "id": 49155,
+    "level": 5,
+    "en": {
+      "description": "User emergency stop is triggered",
+      "cause": "",
+      "solution": "Please check the hardware wiring"
+    },
+    "zh_CN": {
+      "description": "用户急停被触发",
+      "cause": "",
+      "solution": "请检查硬件接线"
+    }
+  },
+  {
+    "id": 49920,
+    "level": 5,
+    "en": {
+      "description": "",
+      "cause": "",
+      "solution": ""
+    },
+    "zh_CN": {
+      "description": "电子皮肤未安装",
+      "cause": "",
+      "solution": "请安装电子皮肤再使用该api"
     }
   },
   {
@@ -5403,6 +6748,20 @@
     }
   },
   {
+    "id": 49674,
+    "level": 5,
+    "en": {
+      "description": "ModbusClose Input params is error.",
+      "cause": "",
+      "solution": "Check whether the hardware is working properly, and restart the controller， or contact technical support engineer."
+    },
+    "zh_CN": {
+      "description": "不在OP状态，在PREOP状态，系统将尝试切换从站到OP",
+      "cause": "",
+      "solution": "检查硬件是否正常并重新启动，或联系技术支持工程师"
+    }
+  },
+  {
     "id": 49664,
     "level": 5,
     "en": {
@@ -5434,12 +6793,12 @@
     "id": 49666,
     "level": 5,
     "en": {
-      "description": "Input params is error.",
+      "description": "ModbusCreate Input params is error.",
       "cause": "",
       "solution": "Enter the correct parameters"
     },
     "zh_CN": {
-      "description": "输入参数错误",
+      "description": "ModbusCreate 输入参数错误",
       "cause": "",
       "solution": "正确输入参数！"
     }
@@ -5462,26 +6821,26 @@
     "id": 49668,
     "level": 5,
     "en": {
-      "description": "Connect failed.",
+      "description": "GetInBits params error ",
       "cause": "",
-      "solution": "Please check network!"
+      "solution": "Please check  input"
     },
     "zh_CN": {
-      "description": "连接失败！",
+      "description": "GetInBits  参数错误",
       "cause": "",
-      "solution": "请检查输入网络！"
+      "solution": "请检查输入参数"
     }
   },
   {
     "id": 49669,
     "level": 5,
     "en": {
-      "description": "Input params is error.",
+      "description": "GetInRegs Input params is error.",
       "cause": "",
       "solution": "Please check input params."
     },
     "zh_CN": {
-      "description": "输入参数错误",
+      "description": "GetInRegs 输入参数错误",
       "cause": "",
       "solution": "请检查输入参数！"
     }
@@ -5490,12 +6849,12 @@
     "id": 49670,
     "level": 5,
     "en": {
-      "description": "Input params is error.",
+      "description": "SetHoldRegs Input params is error.",
       "cause": "",
       "solution": "Please check input params."
     },
     "zh_CN": {
-      "description": "输入参数错误",
+      "description": "SetHoldRegs 输入参数错误",
       "cause": "",
       "solution": "请检查输入参数！"
     }
@@ -5504,12 +6863,12 @@
     "id": 49671,
     "level": 5,
     "en": {
-      "description": "Input params is error.",
+      "description": "GetHoldRegs Input params is error.",
       "cause": "",
       "solution": "Please check input params."
     },
     "zh_CN": {
-      "description": "输入参数错误",
+      "description": "GetHoldRegs 输入参数错误",
       "cause": "",
       "solution": "请检查输入参数！"
     }
@@ -5518,31 +6877,227 @@
     "id": 49672,
     "level": 5,
     "en": {
-      "description": "Input params is error.",
+      "description": "GetCoils Input params is error.",
       "cause": "",
       "solution": "Please check input params."
     },
     "zh_CN": {
-      "description": "输入参数错误",
+      "description": "GetCoils 输入参数错误",
       "cause": "",
       "solution": "请检查输入参数！"
     }
   },
   {
-    "id": 60944,
-    "level": 0,
+    "id": 49673,
+    "level": 5,
     "en": {
-      "description": "Not in OP state, in boot state, the system will try to switch from station to Op.",
+      "description": "SetCoils Input params is error.",
       "cause": "",
-      "solution": "Check whether the hardware is working properly, and restart the controller， or contact technical support engineer."
+      "solution": "Please check input params."
     },
     "zh_CN": {
-      "description": "不在OP模式，在BOOT状态，系统将尝试切换从站到OP",
+      "description": "SetCoils 输入参数错误",
       "cause": "",
-      "solution": "检查硬件是否正常并重新启动，或联系技术支持工程师"
+      "solution": "请检查输入参数！"
     }
   },
-   {
+  {
+    "id": 49675,
+    "level": 5,
+    "en": {
+      "description": "ModbusCreate The fourth input parameter is abnormal.The valid range is 0 or 1.",
+      "cause": "",
+      "solution": "Please check input params."
+    },
+    "zh_CN": {
+      "description": "ModbusCreate 第四个输入参数错误。取值范围为0或1。",
+      "cause": "",
+      "solution": "请检查输入参数！"
+    }
+  },
+  {
+    "id": 49792,
+    "level": 5,
+    "en": {
+      "description": "Incorrect number of arguments to InverseSolution() ",
+      "cause": "",
+      "solution": "Enter the correct parameters"
+    },
+    "zh_CN": {
+      "description": "InverseSolution()的参数数量错误",
+      "cause": "",
+      "solution": "检查输入"
+    }
+  },
+  {
+    "id": 49793,
+    "level": 5,
+    "en": {
+      "description": "Parameter 1 of InverseSolution() is of type error ",
+      "cause": "",
+      "solution": "Enter the correct parameters"
+    },
+    "zh_CN": {
+      "description": "InverseSolution()的参数1类型错误",
+      "cause": "",
+      "solution": "检查输入"
+    }
+  },
+  {
+    "id": 49794,
+    "level": 5,
+    "en": {
+      "description": "Parameter 2 of InverseSolution() is of type error ",
+      "cause": "",
+      "solution": "Enter the correct parameters"
+    },
+    "zh_CN": {
+      "description": "InverseSolution()的参数2类型错误",
+      "cause": "",
+      "solution": "检查输入"
+    }
+  },
+  {
+    "id": 49795,
+    "level": 5,
+    "en": {
+      "description": "Parameter 3 of InverseSolution() is of type error ",
+      "cause": "",
+      "solution": "Enter the correct parameters"
+    },
+    "zh_CN": {
+      "description": "InverseSolution()的参数3类型错误",
+      "cause": "",
+      "solution": "检查输入"
+    }
+  },
+  {
+    "id": 49796,
+    "level": 5,
+    "en": {
+      "description": "Parameter 4 of InverseSolution() is of type error ",
+      "cause": "",
+      "solution": "Enter the correct parameters"
+    },
+    "zh_CN": {
+      "description": "InverseSolution()的参数4类型错误",
+      "cause": "",
+      "solution": "检查输入"
+    }
+  },
+  {
+    "id": 49797,
+    "level": 5,
+    "en": {
+      "description": "Parameter 5 of InverseSolution() is of type error ",
+      "cause": "",
+      "solution": "Enter the correct parameters"
+    },
+    "zh_CN": {
+      "description": "InverseSolution()的参数5类型错误",
+      "cause": "",
+      "solution": "检查输入"
+    }
+  },
+  {
+    "id": 49798,
+    "level": 5,
+    "en": {
+      "description": "Parameter 1 of InverseSolution() has an error ",
+      "cause": "",
+      "solution": "Enter the correct parameters"
+    },
+    "zh_CN": {
+      "description": "InverseSolution()的参数1内容错误",
+      "cause": "",
+      "solution": "检查输入"
+    }
+  },
+  {
+    "id": 49799,
+    "level": 5,
+    "en": {
+      "description": "Parameter 5 of InverseSolution() has an error ",
+      "cause": "",
+      "solution": "Enter the correct parameters"
+    },
+    "zh_CN": {
+      "description": "InverseSolution()的参数5内容错误",
+      "cause": "",
+      "solution": "检查输入"
+    }
+  },
+  {
+    "id": 49808,
+    "level": 5,
+    "en": {
+      "description": "Wrong number of setbackdistance() entries",
+      "cause": "",
+      "solution": "Enter the correct parameters"
+    },
+    "zh_CN": {
+      "description": "setbackdistance()输入个数错误",
+      "cause": "",
+      "solution": "检查输入"
+    }
+  },
+  {
+    "id": 49809,
+    "level": 5,
+    "en": {
+      "description": "Wrong type of setbackdistance() input parameter",
+      "cause": "",
+      "solution": "Enter the correct parameters"
+    },
+    "zh_CN": {
+      "description": "setbackdistance()输入参数类型错误",
+      "cause": "",
+      "solution": "检查输入"
+    }
+  },
+  {
+    "id": 49810,
+    "level": 5,
+    "en": {
+      "description": "The input parameter range of setbackdistance() is wrong",
+      "cause": "",
+      "solution": "Enter the correct parameters"
+    },
+    "zh_CN": {
+      "description": "setbackdistance()输入参数范围错误",
+      "cause": "",
+      "solution": "检查输入"
+    }
+  },
+  {
+    "id": 50441,
+    "level": 5,
+    "en": {
+      "description": "The second parameter number of goio is incorrect",
+      "cause": "",
+      "solution": "Enter the correct parameters"
+    },
+    "zh_CN": {
+      "description": "goio 第2个参数个数错误",
+      "cause": "",
+      "solution": "检查输入"
+    }
+  },
+  {
+    "id": 50442,
+    "level": 5,
+    "en": {
+      "description": "The first value range of the second parameter in goio is incorrect",
+      "cause": "",
+      "solution": "Enter the correct parameters"
+    },
+    "zh_CN": {
+      "description": "goio 第2个参数的第一个值范围不对错误",
+      "cause": "",
+      "solution": "检查输入"
+    }
+  },
+  {
     "id": 60945,
     "level": 0,
     "en": {
@@ -5557,20 +7112,6 @@
     }
   },
   {
-    "id": 60946,
-    "level": 0,
-    "en": {
-      "description": "Not in OP state, in PREOP state, the system will try to switch from station to Op.",
-      "cause": "",
-      "solution": "Check whether the hardware is working properly, and restart the controller， or contact technical support engineer."
-    },
-    "zh_CN": {
-      "description": "不在OP状态，在PREOP状态，系统将尝试切换从站到OP",
-      "cause": "",
-      "solution": "检查硬件是否正常并重新启动，或联系技术支持工程师"
-    }
-  },
-    {
     "id": 60948,
     "level": 0,
     "en": {
@@ -5584,7 +7125,7 @@
       "solution": "检查硬件是否正常并重新启动，或联系技术支持工程师"
     }
   },
-    {
+  {
     "id": 60949,
     "level": 0,
     "en": {
@@ -5593,12 +7134,12 @@
       "solution": "Check whether the hardware is working properly, and restart the controller， or contact technical support engineer."
     },
     "zh_CN": {
-      "description": "不在OP状态,可能在离线状态",
+      "description": "ModbusClose 输入参数错误",
       "cause": "",
-      "solution": "检查硬件是否正常并重新启动，或联系技术支持工程师"
+      "solution": "请检查输入参数！"
     }
   },
-    {
+  {
     "id": 60960,
     "level": 0,
     "en": {
@@ -5612,7 +7153,7 @@
       "solution": "检查硬件是否正常并重新启动，或联系技术支持工程师"
     }
   },
-      {
+  {
     "id": 60961,
     "level": 0,
     "en": {
@@ -5621,12 +7162,12 @@
       "solution": "Check whether the hardware is working properly, and restart the controller， or contact technical support engineer."
     },
     "zh_CN": {
-      "description": "通用IO掉线，请确认安全IO板与通用IO板之间的EtherCAT链路",
+      "description": "通用IO掉线，请确认本体与通用IO板之间的EtherCAT链路",
       "cause": "",
       "solution": "检查硬件是否正常并重新启动，或联系技术支持工程师"
     }
   },
-    {
+  {
     "id": 60962,
     "level": 0,
     "en": {
@@ -5640,7 +7181,7 @@
       "solution": "检查硬件是否正常并重新启动，或联系技术支持工程师"
     }
   },
-    {
+  {
     "id": 60963,
     "level": 0,
     "en": {
@@ -5654,7 +7195,7 @@
       "solution": "检查硬件是否正常并重新启动，或联系技术支持工程师"
     }
   },
-    {
+  {
     "id": 60964,
     "level": 0,
     "en": {
@@ -5668,7 +7209,7 @@
       "solution": "检查硬件是否正常并重新启动，或联系技术支持工程师"
     }
   },
-    {
+  {
     "id": 60965,
     "level": 0,
     "en": {
@@ -5682,7 +7223,7 @@
       "solution": "检查硬件是否正常并重新启动，或联系技术支持工程师"
     }
   },
-    {
+  {
     "id": 60966,
     "level": 0,
     "en": {
@@ -5696,7 +7237,7 @@
       "solution": "检查硬件是否正常并重新启动，或联系技术支持工程师"
     }
   },
-    {
+  {
     "id": 60967,
     "level": 0,
     "en": {
@@ -5710,7 +7251,7 @@
       "solution": "检查硬件是否正常并重新启动，或联系技术支持工程师"
     }
   },
-   {
+  {
     "id": 60968,
     "level": 0,
     "en": {
@@ -5751,5 +7292,719 @@
       "cause": "",
       "solution": "检查输入"
     }
-  } 
+  },
+  {
+    "id": 49728,
+    "level": 5,
+    "en": {
+      "description": "command GoToolR() or GoUserR() params number error, 2 or 3 params",
+      "cause": "",
+      "solution": "Enter the correct parameters"
+    },
+    "zh_CN": {
+      "description": "GoToolR() 或者是 GoUserR()的参数数量不对  2~3 个参数",
+      "cause": "",
+      "solution": "检查输入"
+    }
+  },
+  {
+    "id": 49729,
+    "level": 5,
+    "en": {
+      "description": "command GoToolR() or GoUserR() params 1 type error,need a offser table {x,y,z,a,b,c}",
+      "cause": "",
+      "solution": "Enter the correct parameters"
+    },
+    "zh_CN": {
+      "description": "GoToolR() 或者是 GoUserR()的参数1的类型错误 需要一个table  {x,y,z,a,b,c}",
+      "cause": "",
+      "solution": "检查输入"
+    }
+  },
+  {
+    "id": 49730,
+    "level": 5,
+    "en": {
+      "description": "command GoToolR() or GoUserR() params 1 content error,need a offser table {x,y,z,a,b,c}",
+      "cause": "",
+      "solution": "Enter the correct parameters"
+    },
+    "zh_CN": {
+      "description": "GoToolR() 或者是 GoUserR()的参数1的内容错误 需要一个table  {x,y,z,a,b,c}",
+      "cause": "",
+      "solution": "检查输入"
+    }
+  },
+  {
+    "id": 49731,
+    "level": 5,
+    "en": {
+      "description": "command GoToolR() or GoUserR() params 2 type error,need an index of tool or user range 0 ~ 9",
+      "cause": "",
+      "solution": "Enter the correct parameters"
+    },
+    "zh_CN": {
+      "description": "GoToolR() 或者是 GoUserR()的参数2的类型错误 需要一个整形的索引 范围是 0 ~ 9",
+      "cause": "",
+      "solution": "检查输入"
+    }
+  },
+  {
+    "id": 49732,
+    "level": 5,
+    "en": {
+      "description": "command GoToolR() or GoUserR() params 2 content error,need an index of tool or user range 0~9",
+      "cause": "",
+      "solution": "Enter the correct parameters"
+    },
+    "zh_CN": {
+      "description": "GoToolR() 或者是 GoUserR()的参数2的内容错误 需要一个整形的索引 范围是 0 ~ 9",
+      "cause": "",
+      "solution": "检查输入"
+    }
+  },
+  {
+    "id": 49733,
+    "level": 5,
+    "en": {
+      "description": "command GoToolR() or GoUserR() params 3 type error,need a string",
+      "cause": "",
+      "solution": "Enter the correct parameters"
+    },
+    "zh_CN": {
+      "description": "GoToolR() 或者是 GoUserR()的参数3的类型错误 需要一个字符串",
+      "cause": "",
+      "solution": "检查输入"
+    }
+  },
+  {
+    "id": 49734,
+    "level": 5,
+    "en": {
+      "description": "command GoToolR() or GoUserR() params 3 content error",
+      "cause": "",
+      "solution": "Enter the correct parameters"
+    },
+    "zh_CN": {
+      "description": "GoToolR() 或者是 GoUserR()的参数3的内容错误",
+      "cause": "",
+      "solution": "检查输入"
+    }
+  },
+  {
+    "id": 49744,
+    "level": 5,
+    "en": {
+      "description": "command MoveToolR() or MoveUserR() params number error, 2 or 3 params",
+      "cause": "",
+      "solution": "Enter the correct parameters"
+    },
+    "zh_CN": {
+      "description": "MoveToolR() 或者是 MoveUserR()的参数数量不对  2~3 个参数",
+      "cause": "",
+      "solution": "检查输入"
+    }
+  },
+  {
+    "id": 49745,
+    "level": 5,
+    "en": {
+      "description": "command MoveToolR() or MoveUserR() params 1 type error,need a offser table {x,y,z,a,b,c}",
+      "cause": "",
+      "solution": "Enter the correct parameters"
+    },
+    "zh_CN": {
+      "description": "MoveToolR() 或者是 MoveUserR()的参数1的类型错误 需要一个table  {x,y,z,a,b,c}",
+      "cause": "",
+      "solution": "检查输入"
+    }
+  },
+  {
+    "id": 49746,
+    "level": 5,
+    "en": {
+      "description": "command MoveToolR() or MoveUserR() params 1 content error,need a offser table {x,y,z,a,b,c}",
+      "cause": "",
+      "solution": "Enter the correct parameters"
+    },
+    "zh_CN": {
+      "description": "MoveToolR() 或者是 MoveUserR()的参数1的内容错误 需要一个table  {x,y,z,a,b,c}",
+      "cause": "",
+      "solution": "检查输入"
+    }
+  },
+  {
+    "id": 49747,
+    "level": 5,
+    "en": {
+      "description": "command MoveToolR() or MoveUserR() params 2 type error,need an index of tool or user range 0 ~ 9",
+      "cause": "",
+      "solution": "Enter the correct parameters"
+    },
+    "zh_CN": {
+      "description": "MoveToolR() 或者是 MoveUserR()的参数2的类型错误 需要一个整形的索引 范围是 0 ~ 9",
+      "cause": "",
+      "solution": "检查输入"
+    }
+  },
+  {
+    "id": 49748,
+    "level": 5,
+    "en": {
+      "description": "command MoveToolR() or MoveUserR() params 2 content error,need an index of tool or user range 0~9",
+      "cause": "",
+      "solution": "Enter the correct parameters"
+    },
+    "zh_CN": {
+      "description": "MoveToolR() 或者是 MoveUserR()的参数2的内容错误 需要一个整形的索引 范围是 0 ~ 9",
+      "cause": "",
+      "solution": "检查输入"
+    }
+  },
+  {
+    "id": 49749,
+    "level": 5,
+    "en": {
+      "description": "command MoveToolR() or MoveUserR() params 3 type error,need a string",
+      "cause": "",
+      "solution": "Enter the correct parameters"
+    },
+    "zh_CN": {
+      "description": "MoveToolR() 或者是 MoveUserR()的参数3的类型错误 需要一个字符串",
+      "cause": "",
+      "solution": "检查输入"
+    }
+  },
+  {
+    "id": 49750,
+    "level": 5,
+    "en": {
+      "description": "command MoveToolR() or MoveUserR() params 3 content error",
+      "cause": "",
+      "solution": "Enter the correct parameters"
+    },
+    "zh_CN": {
+      "description": "MoveToolR() 或者是 MoveUserR()的参数3的内容错误",
+      "cause": "",
+      "solution": "检查输入"
+    }
+  },
+  {
+    "id": 49921,
+    "level": 5,
+    "en": {
+      "description": "There is an error in the number of parameters of ScrewSetCurrentSN()",
+      "cause": "",
+      "solution": "Enter the correct parameters"
+    },
+    "zh_CN": {
+      "description": "ScrewSetCurrentSN()的参数个数存在错误",
+      "cause": "",
+      "solution": "检查输入"
+    }
+  },
+  {
+    "id": 49922,
+    "level": 5,
+    "en": {
+      "description": "The parameter type of ScrewSetCurrentSN() is incorrect",
+      "cause": "",
+      "solution": "Enter the correct parameters"
+    },
+    "zh_CN": {
+      "description": "ScrewSetCurrentSN()的参数类型存在错误",
+      "cause": "",
+      "solution": "检查输入"
+    }
+  },
+  {
+    "id": 49923,
+    "level": 5,
+    "en": {
+      "description": "The parameter range of ScrewSetCurrentSN() is incorrect",
+      "cause": "",
+      "solution": "Enter the correct parameters"
+    },
+    "zh_CN": {
+      "description": "ScrewSetCurrentSN()的参数范围存在错误",
+      "cause": "",
+      "solution": "检查输入"
+    }
+  },
+  {
+    "id": 49953,
+    "level": 5,
+    "en": {
+      "description": "There is an error in the number of parameters of ScrewCommitInfo()",
+      "cause": "",
+      "solution": "Enter the correct parameters"
+    },
+    "zh_CN": {
+      "description": "ScrewCommitInfo()的参数个数存在错误",
+      "cause": "",
+      "solution": "检查输入"
+    }
+  },
+  {
+    "id": 49954,
+    "level": 5,
+    "en": {
+      "description": "The first parameter type of ScrewCommitInfo() is incorrect",
+      "cause": "",
+      "solution": "Enter the correct parameters"
+    },
+    "zh_CN": {
+      "description": "ScrewCommitInfo()的第1个参数类型存在错误",
+      "cause": "",
+      "solution": "检查输入"
+    }
+  },
+  {
+    "id": 49955,
+    "level": 5,
+    "en": {
+      "description": "There is an error in the first parameter range of ScrewCommitInfo()",
+      "cause": "",
+      "solution": "Enter the correct parameters"
+    },
+    "zh_CN": {
+      "description": "ScrewCommitInfo()的第1个参数范围存在错误",
+      "cause": "",
+      "solution": "检查输入"
+    }
+  },
+  {
+    "id": 49957,
+    "level": 5,
+    "en": {
+      "description": "The second parameter type of ScrewCommitInfo() is incorrect",
+      "cause": "",
+      "solution": "Enter the correct parameters"
+    },
+    "zh_CN": {
+      "description": "ScrewCommitInfo()的第2个参数类型存在错误",
+      "cause": "",
+      "solution": "检查输入"
+    }
+  },
+  {
+    "id": 49960,
+    "level": 5,
+    "en": {
+      "description": "The third parameter type of ScrewCommitInfo() is incorrect",
+      "cause": "",
+      "solution": "Enter the correct parameters"
+    },
+    "zh_CN": {
+      "description": "ScrewCommitInfo()的第3个参数类型存在错误",
+      "cause": "",
+      "solution": "检查输入"
+    }
+  },
+  {
+    "id": 49963,
+    "level": 5,
+    "en": {
+      "description": "The fourth parameter type of ScrewCommitInfo() is incorrect",
+      "cause": "",
+      "solution": "Enter the correct parameters"
+    },
+    "zh_CN": {
+      "description": "ScrewCommitInfo()的第4个参数类型存在错误",
+      "cause": "",
+      "solution": "检查输入"
+    }
+  },
+  {
+    "id": 49969,
+    "level": 5,
+    "en": {
+      "description": "There is an error in the number of parameters of ScrewCommitProductInfo()",
+      "cause": "",
+      "solution": "Enter the correct parameters"
+    },
+    "zh_CN": {
+      "description": "ScrewCommitProductInfo()的参数个数存在错误",
+      "cause": "",
+      "solution": "检查输入"
+    }
+  },
+  {
+    "id": 49970,
+    "level": 5,
+    "en": {
+      "description": "The first parameter type of ScrewCommitProductInfo() is incorrect",
+      "cause": "",
+      "solution": "Enter the correct parameters"
+    },
+    "zh_CN": {
+      "description": "ScrewCommitProductInfo()的第1个参数类型存在错误",
+      "cause": "",
+      "solution": "检查输入"
+    }
+  },
+  {
+    "id": 49971,
+    "level": 5,
+    "en": {
+      "description": "There is an error in the first parameter range of ScrewCommitProductInfo()",
+      "cause": "",
+      "solution": "Enter the correct parameters"
+    },
+    "zh_CN": {
+      "description": "ScrewCommitProductInfo()的第1个参数范围存在错误",
+      "cause": "",
+      "solution": "检查输入"
+    }
+  },
+  {
+    "id": 49973,
+    "level": 5,
+    "en": {
+      "description": "There is an error in the second number type of ScrewCommitProductInfo()",
+      "cause": "",
+      "solution": "Enter the correct parameters"
+    },
+    "zh_CN": {
+      "description": "ScrewCommitProductInfo()的第2个数类型存在错误",
+      "cause": "",
+      "solution": "检查输入"
+    }
+  },
+  {
+    "id": 49976,
+    "level": 5,
+    "en": {
+      "description": "The third parameter type of ScrewCommitProductInfo() is incorrect",
+      "cause": "",
+      "solution": "Enter the correct parameters"
+    },
+    "zh_CN": {
+      "description": "ScrewCommitProductInfo()的第3个参数类型存在错误",
+      "cause": "",
+      "solution": "检查输入"
+    }
+  },
+  {
+    "id": 49979,
+    "level": 5,
+    "en": {
+      "description": "There is an error in the fourth number type of ScrewCommitProductInfo()",
+      "cause": "",
+      "solution": "Enter the correct parameters"
+    },
+    "zh_CN": {
+      "description": "ScrewCommitProductInfo()的第4个数类型存在错误",
+      "cause": "",
+      "solution": "检查输入"
+    }
+  },
+  {
+    "id": 49985,
+    "level": 5,
+    "en": {
+      "description": "There is an error in the number of parameters of ScrewCommitErrInfo()",
+      "cause": "",
+      "solution": "Enter the correct parameters"
+    },
+    "zh_CN": {
+      "description": "ScrewCommitErrInfo()的参数个数存在错误",
+      "cause": "",
+      "solution": "检查输入"
+    }
+  },
+  {
+    "id": 49986,
+    "level": 5,
+    "en": {
+      "description": "Wrong parameter type of ScrewCommitErrInfo()",
+      "cause": "",
+      "solution": "Enter the correct parameters"
+    },
+    "zh_CN": {
+      "description": "ScrewCommitErrInfo()的参数类型存在错误",
+      "cause": "",
+      "solution": "检查输入"
+    }
+  },
+  {
+    "id": 49987,
+    "level": 5,
+    "en": {
+      "description": "Error in parameter range of ScrewCommitErrInfo()",
+      "cause": "",
+      "solution": "Enter the correct parameters"
+    },
+    "zh_CN": {
+      "description": "ScrewCommitErrInfo()的参数范围存在错误",
+      "cause": "",
+      "solution": "检查输入"
+    }
+  },
+  {
+    "id": 50176,
+    "level": 5,
+    "en": {
+      "description": "The number of parameters for GetPose() is incorrect",
+      "cause": "",
+      "solution": "Enter the correct parameters"
+    },
+    "zh_CN": {
+      "description": "GetPose()的参数个数不正确",
+      "cause": "",
+      "solution": "检查输入"
+    }
+  },
+  {
+    "id": 50177,
+    "level": 5,
+    "en": {
+      "description": "The parameter type of GetPose() is incorrect",
+      "cause": "",
+      "solution": "Enter the correct parameters"
+    },
+    "zh_CN": {
+      "description": "GetPose()的参数类型不正确",
+      "cause": "",
+      "solution": "检查输入"
+    }
+  },
+  {
+    "id": 50178,
+    "level": 5,
+    "en": {
+      "description": "The parameter content of GetPose() is incorrect",
+      "cause": "",
+      "solution": "Enter the correct parameters"
+    },
+    "zh_CN": {
+      "description": "GetPose()的参数内容不正确",
+      "cause": "",
+      "solution": "检查输入"
+    }
+  },
+  {
+    "id": 50179,
+    "level": 5,
+    "en": {
+      "description": "GetPose() execution error",
+      "cause": "",
+      "solution": "Enter the correct parameters"
+    },
+    "zh_CN": {
+      "description": "GetPose()执行错误",
+      "cause": "",
+      "solution": "检查输入"
+    }
+  },
+  {
+    "id": 50192,
+    "level": 5,
+    "en": {
+      "description": "Wrong number of tcpspeed () parameters",
+      "cause": "",
+      "solution": "Enter the correct parameters"
+    },
+    "zh_CN": {
+      "description": "tcpspeed()参数个数错误",
+      "cause": "",
+      "solution": "检查输入"
+    }
+  },
+  {
+    "id": 50193,
+    "level": 5,
+    "en": {
+      "description": "The tcpspeed () parameter type is incorrect",
+      "cause": "",
+      "solution": "Enter the correct parameters"
+    },
+    "zh_CN": {
+      "description": "Wrong number of tcpspeed () parameters",
+      "cause": "",
+      "solution": "检查输入"
+    }
+  },
+  {
+    "id": 50194,
+    "level": 5,
+    "en": {
+      "description": "Tcpspeed () parameter range error",
+      "cause": "",
+      "solution": "Enter the correct parameters"
+    },
+    "zh_CN": {
+      "description": "tcpspeed()参数范围错误",
+      "cause": "",
+      "solution": "检查输入"
+    }
+  },
+  {
+    "id": 50195,
+    "level": 5,
+    "en": {
+      "description": "Tcpspeed () internal execution error",
+      "cause": "",
+      "solution": "Enter the correct parameters"
+    },
+    "zh_CN": {
+      "description": "tcpspeed()内部执行错误",
+      "cause": "",
+      "solution": "检查输入"
+    }
+  },
+  {
+    "id": 50208,
+    "level": 5,
+    "en": {
+      "description": "Wrong number of tcpspeedend () parameters",
+      "cause": "",
+      "solution": "Enter the correct parameters"
+    },
+    "zh_CN": {
+      "description": "tcpspeedend()参数个数错误",
+      "cause": "",
+      "solution": "检查输入"
+    }
+  },
+  {
+    "id": 50209,
+    "level": 5,
+    "en": {
+      "description": "Tcpspeedend () internal execution error",
+      "cause": "",
+      "solution": "Enter the correct parameters"
+    },
+    "zh_CN": {
+      "description": "GetPose()执行错误",
+      "cause": "",
+      "solution": "检查输入"
+    }
+  },
+  {
+    "id": 50224,
+    "level": 5,
+    "en": {
+      "description": "Wrong number of servoj() parameters",
+      "cause": "",
+      "solution": "Enter the correct parameters"
+    },
+    "zh_CN": {
+      "description": "servoj()参数数量错误",
+      "cause": "",
+      "solution": "检查输入"
+    }
+  },
+  {
+    "id": 50225,
+    "level": 5,
+    "en": {
+      "description": "Wrong type of servoj() parameter 1",
+      "cause": "",
+      "solution": "Enter the correct parameters"
+    },
+    "zh_CN": {
+      "description": "servoj()参数1类型错误",
+      "cause": "",
+      "solution": "检查输入"
+    }
+  },
+  {
+    "id": 50226,
+    "level": 5,
+    "en": {
+      "description": "Servoj() parameter 1 range error",
+      "cause": "",
+      "solution": "Enter the correct parameters"
+    },
+    "zh_CN": {
+      "description": "servoj()参数1范围错误",
+      "cause": "",
+      "solution": "检查输入"
+    }
+  },
+  {
+    "id": 50227,
+    "level": 5,
+    "en": {
+      "description": "Servoj() optional parameter does not exist",
+      "cause": "",
+      "solution": "Enter the correct parameters"
+    },
+    "zh_CN": {
+      "description": "servoj()可选参数不存在",
+      "cause": "",
+      "solution": "检查输入"
+    }
+  },
+  {
+    "id": 50228,
+    "level": 5,
+    "en": {
+      "description": "Servoj() optional parameter t error",
+      "cause": "",
+      "solution": "Enter the correct parameters"
+    },
+    "zh_CN": {
+      "description": "servoj()可选参数t错误",
+      "cause": "",
+      "solution": "检查输入"
+    }
+  },
+  {
+    "id": 50229,
+    "level": 5,
+    "en": {
+      "description": "Servoj() optional parameter lookahead_time error",
+      "cause": "",
+      "solution": "Enter the correct parameters"
+    },
+    "zh_CN": {
+      "description": "servoj()可选参数lookahead_time错误",
+      "cause": "",
+      "solution": "检查输入"
+    }
+  },
+  {
+    "id": 50230,
+    "level": 5,
+    "en": {
+      "description": "Servoj() optional parameter gain error",
+      "cause": "",
+      "solution": "Enter the correct parameters"
+    },
+    "zh_CN": {
+      "description": "servoj()可选参数gain错误",
+      "cause": "",
+      "solution": "检查输入"
+    }
+  },
+  {
+    "id": 50240,
+    "level": 5,
+    "en": {
+      "description": "Abnormal communication between controller and algorithm",
+      "cause": "",
+      "solution": "Please rerun the script"
+    },
+    "zh_CN": {
+      "description": "与算法通信异常",
+      "cause": "",
+      "solution": "请重新运行脚本"
+    }
+  },
+  {
+    "id": 50241,
+    "level": 5,
+    "en": {
+      "description": "Abnormal communication between Di() and algorithm",
+      "cause": "",
+      "solution": "Please rerun the script"
+    },
+    "zh_CN": {
+      "description": "di与算法通信异常",
+      "cause": "",
+      "solution": "请重新运行脚本"
+    }
+  }
 ]

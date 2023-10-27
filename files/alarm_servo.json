@@ -299,10 +299,10 @@
         "en": {
             "description" : "Working deceleration is higher than the expected deceleration",
             "cause" : "",
-            "solution" : "Reduce running deceleration"
+            "solution": "System error, please contact technical support engineer"
         },
         "zh_CN": {
-            "description" : "System error, please contact technical support engineer",
+            "description": "运行减速度超过SoftMotion轴限制",
             "cause" : "",
             "solution" : "系统错误，请联系技术支持工程师"
         }
@@ -1064,6 +1064,20 @@
         }
     },
     {
+        "id": 28961,
+        "level": 0,
+        "en": {
+            "description": "Motor is in Locked-Rotor status",
+            "cause": "",
+            "solution": "Check whether the hardware is working properly, or contact technical support engineer"
+        },
+        "zh_CN": {
+            "description": "电机堵转保护",
+            "cause": "",
+            "solution": "检查硬件是否正常，或联系技术支持工程师"
+        }
+    },
+    {
         "id": 29056,
         "level": 0,
         "en": {
@@ -1131,6 +1145,90 @@
             "description" : "上使能失败",
             "cause" : "",
             "solution" : "检查线路连接，重新上使能"
+        }
+    },
+    {
+        "id": 60944,
+        "level": 0,
+        "en": {
+            "description": "Not in OP state, in boot state, the system will try to switch from station to Op.",
+            "cause": "",
+            "solution": "Check whether the hardware is working properly, and restart the controller， or contact technical support engineer."
+        },
+        "zh_CN": {
+            "description": "不在OP模式，在BOOT状态，系统将尝试切换从站到OP",
+            "cause": "",
+            "solution": "检查硬件是否正常并重新启动，或联系技术支持工程师"
+        }
+    },
+    {
+        "id": 60945,
+        "level": 0,
+        "en": {
+            "description": "Not in OP state, in Init state, the system will try to switch from station to Op.",
+            "cause": "",
+            "solution": "Check whether the hardware is working properly, and restart the controller， or contact technical support engineer."
+        },
+        "zh_CN": {
+            "description": "不在OP状态，在Init状态，系统将尝试切换从站到OP",
+            "cause": "",
+            "solution": "检查硬件是否正常并重新启动，或联系技术支持工程师"
+        }
+    },
+    {
+        "id": 60946,
+        "level": 0,
+        "en": {
+            "description": "Not in OP state, in PREOP state, the system will try to switch from station to Op.",
+            "cause": "",
+            "solution": "Check whether the hardware is working properly, and restart the controller， or contact technical support engineer."
+        },
+        "zh_CN": {
+            "description": "不在OP状态，在PREOP状态，系统将尝试切换从站到OP",
+            "cause": "",
+            "solution": "检查硬件是否正常并重新启动，或联系技术支持工程师"
+        }
+    },
+    {
+        "id": 60948,
+        "level": 0,
+        "en": {
+            "description": "Not in OP state, in SAFEOP state, the system will try to switch from station to Op.",
+            "cause": "",
+            "solution": "Check whether the hardware is working properly, and restart the controller， or contact technical support engineer."
+        },
+        "zh_CN": {
+            "description": "不在OP状态，在SAFEOP状态，系统将尝试切换从站到OP",
+            "cause": "",
+            "solution": "检查硬件是否正常并重新启动，或联系技术支持工程师"
+        }
+    },
+    {
+        "id": 60949,
+        "level": 0,
+        "en": {
+            "description": "Not in OP state, but may be offline.",
+            "cause": "",
+            "solution": "Check whether the hardware is working properly, and restart the controller， or contact technical support engineer."
+        },
+        "zh_CN": {
+            "description": "不在OP状态,可能在离线状态",
+            "cause": "",
+            "solution": "检查硬件是否正常并重新启动，或联系技术支持工程师"
+        }
+    },
+    {
+        "id": 29584,
+        "level": 1,
+        "en": {
+            "description": "Large deviation of joint position",
+            "cause": "",
+            "solution": "1. Check production parameters; 2. Check encoder installation; 3. Check transmission structure"
+        },
+        "zh_CN": {
+            "description": "关节位置偏差大",
+            "cause": "",
+            "solution": "1.检查生产参数 2.检查编码器安装 3.检查传动结构"
         }
     }
 ]

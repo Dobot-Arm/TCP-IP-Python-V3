@@ -3,6 +3,11 @@ from threading import Timer
 from tkinter import Text, END
 import datetime
 import numpy as np
+import os
+import json
+
+alarmControllerFile="files/alarm_controller.json"
+alarmServoFile="files/alarm_servo.json"
 
 # Port Feedback
 MyType = np.dtype([(
@@ -112,6 +117,18 @@ MyType = np.dtype([(
     ('actual_quaternion', np.float64, (4, )),
     ('reserve3', np.byte, (24, ))])
 
+#读取控制器和伺服告警文件
+def alarmAlarmJsonFile():
+    currrntDirectory=os.path.dirname(__file__)
+    jsonContrellorPath=os.path.join(currrntDirectory,alarmControllerFile)
+    jsonServoPath=os.path.join(currrntDirectory,alarmServoFile)
+    
+    with open(jsonContrellorPath,encoding='utf-8') as f:
+        dataController=json.load(f)
+    with open(jsonServoPath,encoding='utf-8') as f:
+        dataServo=json.load(f)
+    return dataController,dataServo   
+ 
 
 class DobotApi:
     def __init__(self, ip, port, *args):

@@ -8,10 +8,8 @@ import re
 current_actual = None
 algorithm_queue = None
 enableStatus_robot = None
-robot_state = False
 robotErrorState = False
 globalLockValue = threading.Lock()
-globalLockState = threading.Lock()
 
 def ConnectRobot():
     try:
@@ -58,27 +56,22 @@ def GetFeed(feed: DobotApi):
         sleep(0.001)
 
 def WaitArrive(point_list):
-    global robot_state
     while True:
         is_arrive = True
         globalLockValue.acquire()
         if current_actual is not None:
-            for index in range(6):
+            for index in range(4):
                 if (abs(current_actual[index] - point_list[index]) > 1):
                     is_arrive = False
-            globalLockState.acquire()
-            if is_arrive or robot_state:
-                robot_state=False
-                globalLockState.release()
+            if is_arrive :
                 globalLockValue.release()
                 return
-            globalLockState.release()
         globalLockValue.release()  
         sleep(0.001)
 
 def ClearRobotError(dashboard: DobotApiDashboard):
-    global robot_state
     global robotErrorState
+    dataController,dataServo =alarmAlarmJsonFile()    # 读取控制器和伺服告警码
     while True:
       globalLockValue.acquire()
       if robotErrorState:
@@ -87,27 +80,33 @@ def ClearRobotError(dashboard: DobotApiDashboard):
                 if (numbers[0] == 0):
                   if (len(numbers)>1):
                     for i in numbers[1:]:
-                      print("errorid",i)   
-                    while True:
-                            globalLockState.acquire()
-                            dashboard.ClearError()
-                            numberss = re.findall(r'-?\d+', dashboard.Continue())
-                            if int(numberss[0])==0 :
-                                robot_state=True
-                                globalLockState.release()
-                                break
-                            globalLockState.release()
+                      alarmState=False
+                      if i==-2:
+                          print("机器告警 机器碰撞 ",i)
+                          alarmState=True
+                      if alarmState:
+                          continue                
+                      for item in dataController:
+                        if  i==item["id"]:
+                            print("机器告警 Controller errorid",i,item["zh_CN"]["description"])
+                            alarmState=True
+                            break 
+                      if alarmState:
+                          continue
+                      for item in dataServo:
+                        if  i==item["id"]:
+                            print("机器告警 Servo errorid",i,item["zh_CN"]["description"])
+                            break  
+                       
+                    choose = input("输入1, 将清除错误, 机器继续运行: ")     
+                    if  int(choose)==1:
+                        dashboard.ClearError()
+                        sleep(0.01)
+                        dashboard.Continue()
+
       else:  
-         if  int(enableStatus_robot[0])==1 and int(algorithm_queue[0])==0:
-                 while True: 
-                    globalLockState.acquire()
-                    numberss = re.findall(r'-?\d+', dashboard.Continue())
-                    if int(numberss[0])==0 :
-                        robot_state=True
-                
-                        globalLockState.release()
-                        break
-                    globalLockState.release()
+         if int(enableStatus_robot[0])==1 and int(algorithm_queue[0])==0:
+            dashboard.Continue()
       globalLockValue.release()
       sleep(5)
        

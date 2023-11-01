@@ -557,9 +557,8 @@ class DobotApiDashboard(DobotApi):
         self.send_data(string)
         return self.wait_reply()
 
-    def ModbusCreate(self,offset1,offset2,offset3,offset4):
-        string = "ModbusCreate("+repr(offset1)+","
-        string =string+"{:d},{:d},{:d}".format(offset2,offset3,offset4)+")"
+    def ModbusCreate(self,ip,port,slave_id,isRTU):
+        string ="ModbusCreate({:s},{:d},{:d},{:d}".format(ip,port,slave_id,isRTU)+")"
         self.send_data(string)
         return self.wait_reply()
     

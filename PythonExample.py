@@ -398,8 +398,8 @@ if __name__ == '__main__':
         axisID=""
         move.MoveJog(axisID)           
     else:
-        axisID=""
-        CoordType=""
+        axisID="J1+"
+        CoordType="CoordType=1"
         userparam="User=0"
         toolparam="Tool=0"
         move.MoveJog(axisID, CoordType, userparam, toolparam)    

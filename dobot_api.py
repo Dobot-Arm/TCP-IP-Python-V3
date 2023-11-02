@@ -907,7 +907,7 @@ class DobotApiMove(DobotApi):
                     user_index: user index is 0 ~ 9 (default value is 0)
                     tool_index: tool index is 0 ~ 9 (default value is 0)
         """
-        string = "MoveJog({:f}".format(axis_id)
+        string = "MoveJog({:s}".format(axis_id)
         for params in dynParams:
             string = string + ","+ str(params)
         string = string + ")" 

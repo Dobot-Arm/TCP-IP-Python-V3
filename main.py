@@ -5,9 +5,9 @@ import numpy as np
 import re
 
 # 全局变量(当前坐标)
-current_actual = None
-algorithm_queue = None
-enableStatus_robot = None
+current_actual = [-1]
+algorithm_queue = -1
+enableStatus_robot = -1
 robotErrorState = False
 globalLockValue = threading.Lock()
 
@@ -131,8 +131,10 @@ if __name__ == '__main__':
     feed_thread1.daemon = True
     feed_thread1.start()
     print("循环执行...")
-    point_a = [20, 280, -60, 200, 10, 10]
-    point_b = [160, 260, -30, 170, 10, 10]
+    point_a = [148.021667, -325.570190, 1461.586304, -
+               87.462433, 23.257524, -114.395256]
+    point_b = [46.395420, -345.765656, 1463.996338, -
+               87.583336, 22.516230, -133.578445]
     while True:
         RunPoint(move, point_a)
         WaitArrive(point_a)

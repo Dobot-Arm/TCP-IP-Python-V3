@@ -1,0 +1,4 @@
+1/15   1.增加changelog  
+       2.删除多余指令MovJExt,SyncAll  
+       3.新增ServoJS功能指令, 增加ServoJ可选参数适配   
+       4.增加每条指令下发与接收中间数据同步

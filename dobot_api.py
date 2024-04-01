@@ -471,10 +471,10 @@ class DobotApiDashboard(DobotApi):
             "F64" : reads 64-bit double precision floating point number (8 bytes, occupying 4 registers)
         """
         if type is not None:
-            string = "SetHoldRegs({:d},{:d},{:d},{:d},{:s})".format(
+            string = "SetHoldRegs({:d},{:d},{:d},{:s},{:s})".format(
                 id, addr, count, table, type)
         else:
-            string = "SetHoldRegs({:d},{:d},{:d},{:d})".format(
+            string = "SetHoldRegs({:d},{:d},{:d},{:s})".format(
                 id, addr, count, table)
         return self.sendRecvMsg(string)
 

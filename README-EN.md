@@ -35,10 +35,6 @@ Dobot   TCP-IP-Python-V3   secondary development API interface ([TCP-IP-Python-V
 
 # 2\. Technical support
 
-If you have any questions or suggestions, you can contact Dobot's technical support:
-
-* Send an email to futingxing@dobot-robots.com with a detailed description of the problem you are experiencing and the scenario in which you are using it.
-* Send an email to wuyongfeng@dobot-robots.com with a detailed description of the problem you are experiencing and the scenario in which you are using it.
 
 # 3\. TCP-IP-Python-V3 control protocol
 

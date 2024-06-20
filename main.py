@@ -121,15 +121,15 @@ def ClearRobotError(dashboard: DobotApiDashboard):
 
 if __name__ == '__main__':
     dashboard, move, feed = ConnectRobot()
-    print("开始使能...")
-    dashboard.EnableRobot()
-    print("完成使能:)")
     feed_thread = threading.Thread(target=GetFeed, args=(feed,))
     feed_thread.daemon = True
     feed_thread.start()
     feed_thread1 = threading.Thread(target=ClearRobotError, args=(dashboard,))
     feed_thread1.daemon = True
     feed_thread1.start()
+     print("开始使能...")
+    dashboard.EnableRobot()
+    print("完成使能:)")
     print("循环执行...")
     point_a = [148.021667, -325.570190, 1461.586304, -
                87.462433, 23.257524, -114.395256]

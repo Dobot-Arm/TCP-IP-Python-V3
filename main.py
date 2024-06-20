@@ -127,7 +127,7 @@ if __name__ == '__main__':
     feed_thread1 = threading.Thread(target=ClearRobotError, args=(dashboard,))
     feed_thread1.daemon = True
     feed_thread1.start()
-     print("开始使能...")
+    print("开始使能...")
     dashboard.EnableRobot()
     print("完成使能:)")
     print("循环执行...")

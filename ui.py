@@ -105,17 +105,19 @@ class RobotUI(object):
                         text="ClearError", rely=0.1, x=200, command=self.clear_error)
         self.set_button(master=self.frame_dashboard,
                         text=" Continue ", rely=0.1, x=300, command=self.Continue)
+        self.set_button(master=self.frame_dashboard,
+                        text="PowerOn", rely=0.1, x=390, command=self.PowerOn)
 
         # Speed Ratio
         self.label_speed = Label(self.frame_dashboard, text="Speed Ratio:")
-        self.label_speed.place(rely=0.1, x=430)
+        self.label_speed.place(rely=0.1, x=480)
 
         s_value = StringVar(self.root, value="50")
         self.entry_speed = Entry(self.frame_dashboard,
                                  width=6, textvariable=s_value)
-        self.entry_speed.place(rely=0.1, x=520)
+        self.entry_speed.place(rely=0.1, x=570)
         self.label_cent = Label(self.frame_dashboard, text="%")
-        self.label_cent.place(rely=0.1, x=550)
+        self.label_cent.place(rely=0.1, x=620)
 
         self.set_button(master=self.frame_dashboard,
                         text="Confirm", rely=0.1, x=586, command=self.confirm_speed)
@@ -365,6 +367,9 @@ class RobotUI(object):
 
     def Continue(self):
         self.client_dash.Continue()
+
+    def PowerOn(self):
+        self.client_dash.PowerOn()
 
     def confirm_speed(self):
         self.client_dash.SpeedFactor(int(self.entry_speed.get()))

@@ -810,7 +810,7 @@ class DobotApiMove(DobotApi):
         string = string + ")"
         return self.sendRecvMsg(string)
 
-    def Circle3(self, count, x1, y1, z1, a1, b1, c1, x2, y2, z2, a2, b2, c2, *dynParams):
+    def Circle3(self, x1, y1, z1, a1, b1, c1, x2, y2, z2, a2, b2, c2, count,*dynParams):
         """
         Full circle motion command
         count:Run laps
@@ -818,8 +818,8 @@ class DobotApiMove(DobotApi):
         x2, y2, z2, r2 :Is the value of the end point coordinates
         Note: This instruction should be used together with other movement instructions
         """
-        string = "Circle3({:d},{:f},{:f},{:f},{:f},{:f},{:f},{:f},{:f},{:f},{:f},{:f},{:f}".format(
-            count, x1, y1, z1, a1, b1, c1, x2, y2, z2, a2, b2, c2)
+        string = "Circle3({:f},{:f},{:f},{:f},{:f},{:f},{:f},{:f},{:f},{:f},{:f},{:f},{:d}".format(
+            x1, y1, z1, a1, b1, c1, x2, y2, z2, a2, b2, c2, count)
         for params in dynParams:
             string = string + "," + str(params)
         string = string + ")"

@@ -653,8 +653,8 @@ class DobotApiDashboard(DobotApi):
         string = "LoadSwitch({:d}".format(offset1)+")"
         return self.sendRecvMsg(string)
 
-    def wait(self):
-        string = "wait()"
+    def wait(self,t):
+        string = "wait({:d})".format(t)
         return self.sendRecvMsg(string)
 
     def pause(self):

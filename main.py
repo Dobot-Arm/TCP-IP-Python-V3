@@ -1,5 +1,5 @@
 import threading
-from dobot_api import DobotApiDashboard, DobotApi, DobotApiMove, MyType, alarmAlarmJsonFile
+from dobot_api import DobotApiDashboard, DobotApi, DobotApiMove,DobotApiFeedBack, MyType, alarmAlarmJsonFile
 from time import sleep
 import numpy as np
 import re
@@ -9,6 +9,7 @@ current_actual = [-1]
 algorithm_queue = -1
 enableStatus_robot = -1
 robotErrorState = False
+robotMode = 0   
 globalLockValue = threading.Lock()
 
 
@@ -22,8 +23,9 @@ def ConnectRobot():
         dashboard = DobotApiDashboard(ip, dashboardPort)
         move = DobotApiMove(ip, movePort)
         feed = DobotApi(ip, feedPort)
+        feedFour = DobotApiFeedBack(ip,feedPort)
         print(">.<连接成功>!<")
-        return dashboard, move, feed
+        return dashboard, move, feed,feedFour
     except Exception as e:
         print(":(连接失败:(")
         raise e
@@ -34,31 +36,25 @@ def RunPoint(move: DobotApiMove, point_list: list):
               point_list[3], point_list[4], point_list[5])
 
 
-def GetFeed(feed: DobotApi):
+def GetFeed(feedFour: DobotApiFeedBack):
     global current_actual
     global algorithm_queue
     global enableStatus_robot
     global robotErrorState
-    hasRead = 0
+    global robotMode
+# 获取机器人状态
     while True:
-        data = bytes()
-        while hasRead < 1440:
-            temp = feed.socket_dobot.recv(1440 - hasRead)
-            if len(temp) > 0:
-                hasRead += len(temp)
-                data += temp
-        hasRead = 0
-        feedInfo = np.frombuffer(data, dtype=MyType)
-        if hex((feedInfo['test_value'][0])) == '0x123456789abcdef':
-            globalLockValue.acquire()
-            # Refresh Properties
-            current_actual = feedInfo["tool_vector_actual"][0]
-            algorithm_queue = feedInfo['run_queued_cmd'][0]
-            enableStatus_robot = feedInfo['enable_status'][0]
-            robotErrorState = feedInfo['error_status'][0]
-            globalLockValue.release()
-        sleep(0.001)
-
+        with globalLockValue:
+            feedInfo = feedFour.feedBackData()
+            if hex((feedInfo['test_value'][0])) == '0x123456789abcdef':
+                # Refresh Properties
+                robotMode=feedInfo['robot_mode'][0]
+                current_actual = feedInfo["tool_vector_actual"][0]
+                algorithm_queue = feedInfo['run_queued_cmd'][0]
+                enableStatus_robot = feedInfo['enable_status'][0]
+                robotErrorState = feedInfo['error_status'][0]
+                # 自定义添加所需反馈数据
+            sleep(0.001)
 
 def WaitArrive(point_list):
     while True:
@@ -120,8 +116,8 @@ def ClearRobotError(dashboard: DobotApiDashboard):
 
 
 if __name__ == '__main__':
-    dashboard, move, feed = ConnectRobot()
-    feed_thread = threading.Thread(target=GetFeed, args=(feed,))
+    dashboard, move, feed,feedFour = ConnectRobot()
+    feed_thread = threading.Thread(target=GetFeed, args=(feedFour,))
     feed_thread.daemon = True
     feed_thread.start()
     feed_thread1 = threading.Thread(target=ClearRobotError, args=(dashboard,))
@@ -135,6 +131,8 @@ if __name__ == '__main__':
                87.462433, 23.257524, -114.395256]
     point_b = [46.395420, -345.765656, 1463.996338, -
                87.583336, 22.516230, -133.578445]
+
+        
     while True:
         RunPoint(move, point_a)
         WaitArrive(point_a)

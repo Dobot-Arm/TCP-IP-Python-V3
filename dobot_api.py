@@ -5,6 +5,7 @@ import datetime
 import numpy as np
 import os
 import json
+import time
 
 alarmControllerFile = "files/alarm_controller.json"
 alarmServoFile = "files/alarm_servo.json"
@@ -1031,3 +1032,53 @@ class DobotApiMove(DobotApi):
             string = string + "," + str(params)
         string = string + ")"
         return self.sendRecvMsg(string)
+
+
+# Feedback interface
+# 反馈数据接口类
+
+
+class DobotApiFeedBack(DobotApi):
+    def __init__(self, ip, port, *args):
+        super().__init__(ip, port, *args)
+        self.__MyType = []
+        self.last_recv_time = time.perf_counter()
+        
+
+    def feedBackData(self):
+        """
+        返回机械臂状态
+        Return the robot status
+        """
+        self.socket_dobot.setblocking(True)  # 设置为阻塞模式
+        data = bytes()
+        #current_recv_time = time.perf_counter() #计时，获取当前时间
+        temp = self.socket_dobot.recv(144000) #缓冲区
+        if len(temp) > 1440:    
+            temp = self.socket_dobot.recv(144000)
+        #print("get:",len(temp))
+        i=0
+        if len(temp) < 1440:
+            while i < 5 :
+                #print("重新接收")
+                temp = self.socket_dobot.recv(144000)
+                if len(temp) > 1440:
+                    break
+                i+=1
+            if i >= 5:
+                raise Exception("接收数据包缺失，请检查网络环境")
+        
+        #interval = (current_recv_time - self.last_recv_time) * 1000  # 转换为毫秒
+        #self.last_recv_time = current_recv_time
+        #print(f"Time interval since last receive: {interval:.3f} ms")
+        
+        data = temp[0:1440] #截取1440字节
+        #print(len(data))
+        #print(f"Single element size of MyType: {MyType.itemsize} bytes")
+        self.__MyType = None   
+
+        if len(data) == 1440:        
+            self.__MyType = np.frombuffer(data, dtype=MyType)
+
+        return self.__MyType
+        

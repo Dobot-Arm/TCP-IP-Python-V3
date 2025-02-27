@@ -839,7 +839,7 @@ class DobotApiMove(DobotApi):
     lookahead_time   float 作用类似于PID的D项,默认50,标量,无单位 取值范围:[20.0,100.0]
     gain float   目标位置的比例放大器,作用类似于PID的P项,  默认500,标量,无单位   取值范围:[200.0,1000.0]
     """
-        string = "ServoJ({:f},{:f},{:f},{:f},{:f},{:f},{:f},{:f},{:f})".format(
+        string = "ServoJ({:f},{:f},{:f},{:f},{:f},{:f},t={:f},lookahead_time={:f},gain={:f})".format(
             j1, j2, j3, j4, j5, j6, t, lookahead_time, gain)
         return self.sendRecvMsg(string)
 
